@@ -1,0 +1,1525 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meta Head Builder</title>
+<meta name="description" content="Generate Meta, Open Graph, Twitter, JSON-LD and icons for any page">
+<meta name="author" content="Developer Zahid">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#171717">
+<meta name="color-scheme" content="dark">
+<link href="https://developer-zahid.github.io/Meta-Head-Builder/" rel="canonical">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meta Head Builder">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://developer-zahid.github.io/Meta-Head-Builder/">
+<meta property="og:title" content="Meta Head Builder">
+<meta property="og:description" content="Generate Meta, Open Graph, Twitter, JSON-LD and icons for any page">
+<meta property="og:image" content="https://developer-zahid.github.io/Meta-Head-Builder/assets/images/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Meta Head Builder — a form beside the generated head tags">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ZahidHa45112113">
+<meta name="twitter:creator" content="@ZahidHa45112113">
+<meta name="twitter:title" content="Meta Head Builder">
+<meta name="twitter:description" content="Generate Meta, Open Graph, Twitter, JSON-LD and icons for any page">
+<meta name="twitter:image" content="https://developer-zahid.github.io/Meta-Head-Builder/assets/images/og-image.jpg">
+<meta name="twitter:image:alt" content="Meta Head Builder — a form beside the generated head tags">
+
+<!--
+  Structured data. WebSite, WebApplication and Person share one @graph and reference each other by @id.
+  Validate at https://validator.schema.org/ after editing.
+-->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://developer-zahid.github.io/Meta-Head-Builder/#website",
+        "url": "https://developer-zahid.github.io/Meta-Head-Builder/",
+        "name": "Meta Head Builder",
+        "description": "Generate Meta, Open Graph, Twitter, JSON-LD and icons for any page",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://developer-zahid.github.io/Meta-Head-Builder/#author"
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://developer-zahid.github.io/Meta-Head-Builder/#webapp",
+        "url": "https://developer-zahid.github.io/Meta-Head-Builder/",
+        "name": "Meta Head Builder",
+        "description": "Generate Meta, Open Graph, Twitter, JSON-LD and icons for any page",
+        "applicationCategory": "DeveloperApplication",
+        "applicationSubCategory": "Code generator",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript and a modern browser",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "screenshot": "https://developer-zahid.github.io/Meta-Head-Builder/assets/images/og-image.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Generates meta, Open Graph, Twitter and JSON-LD tags from one form",
+          "Fields inherit from each other, so each value is typed once",
+          "Imports existing tags from any HTML head snippet",
+          "Previews Google, Facebook, LinkedIn and X cards",
+          "Checks titles, descriptions, images and robots for common SEO issues",
+          "Crops and exports an OG image, favicons and a web manifest as a zip"
+        ],
+        "author": {
+          "@id": "https://developer-zahid.github.io/Meta-Head-Builder/#author"
+        },
+        "creator": {
+          "@id": "https://developer-zahid.github.io/Meta-Head-Builder/#author"
+        },
+        "isPartOf": {
+          "@id": "https://developer-zahid.github.io/Meta-Head-Builder/#website"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://developer-zahid.github.io/Meta-Head-Builder/#author",
+        "name": "Developer Zahid",
+        "alternateName": "Zahid Hasan Munna",
+        "url": "https://github.com/Developer-Zahid",
+        "email": "mailto:frontendcsssimplified@gmail.com",
+        "sameAs": [
+          "https://github.com/Developer-Zahid",
+          "https://www.linkedin.com/in/zahid-hasan-munna/",
+          "https://x.com/ZahidHa45112113",
+          "https://www.facebook.com/coderexpertzahid/",
+          "https://www.youtube.com/@frontend-css-simplified",
+          "https://codepen.io/DeveloperZahid",
+          "https://wa.me/8801992409030"
+        ]
+      }
+    ]
+  }
+</script>
+
+<!-- Icons -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://developer-zahid.github.io/Meta-Head-Builder/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://developer-zahid.github.io/Meta-Head-Builder/assets/images/favicon-32x32.png">
+<link rel="icon" href="https://developer-zahid.github.io/Meta-Head-Builder/assets/images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="https://developer-zahid.github.io/Meta-Head-Builder/assets/images/favicon-16x16.png">
+<link rel="manifest" href="https://developer-zahid.github.io/Meta-Head-Builder/assets/images/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* base reset */
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+/* Layout: sticky project bar; form column on the left, sticky code / preview / checks panel on the right; stacks below 980px */
+:root{
+  --bg:#eef1f4; --panel:#ffffff; --sunk:#f5f7f9; --line:#d6dce3; --line-strong:#b8c1cb;
+  --fg:#131920; --muted:#566170; --faint:#8a94a1;
+  --accent:#2453e0; --accent-soft:#e2e9ff; --accent-ink:#ffffff;
+  --ok:#1c7f47; --warn:#a2650c; --bad:#c2312f; --info:#3d60c4; --on-bad:#ffffff;
+  --scrim:rgba(14,20,28,.5);
+  --code-bg:#10151c; --code-fg:#d6dde6; --code-gutter:#4c5664; --code-edge:#1d252f;
+  --t-tag:#86abff; --t-attr:#e8b86f; --t-str:#9dd5a3; --t-com:#6f7b8b; --t-key:#c8aaff; --t-num:#f2a074; --t-p:#7f8a9a;
+  --serp-title:#1a0dab;
+  --f-display:"Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --f-ui:"Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-mono:"Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --hdr:58px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0c1015; --panel:#141a21; --sunk:#0f141a; --line:#242d38; --line-strong:#344050;
+  --fg:#e5eaf0; --muted:#94a0af; --faint:#667282;
+  --accent:#7d9dff; --accent-soft:#1b2648; --accent-ink:#0b1020;
+  --ok:#4fc27e; --warn:#e2a84b; --bad:#f07373; --info:#86a5ff; --on-bad:#1a0b0b;
+  --scrim:rgba(0,0,0,.6);
+  --code-bg:#090d12; --code-edge:#18202a;
+  --serp-title:#8ab4f8;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0c1015; --panel:#141a21; --sunk:#0f141a; --line:#242d38; --line-strong:#344050;
+  --fg:#e5eaf0; --muted:#94a0af; --faint:#667282;
+  --accent:#7d9dff; --accent-soft:#1b2648; --accent-ink:#0b1020;
+  --ok:#4fc27e; --warn:#e2a84b; --bad:#f07373; --info:#86a5ff; --on-bad:#1a0b0b;
+  --scrim:rgba(0,0,0,.6);
+  --code-bg:#090d12; --code-edge:#18202a;
+  --serp-title:#8ab4f8;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{color:var(--fg);font:14px/1.5 var(--f-ui);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- top bar ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--panel);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;max-width:1560px;margin:0 auto;padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.brand{display:flex;align-items:baseline;gap:8px;margin-right:6px}
+.brand .mark{font:500 12px var(--f-mono);color:var(--accent)}
+.brand .wm{font:700 19px/1 var(--f-display);letter-spacing:-.01em;white-space:nowrap}
+.top-in .sp{flex:1}
+.tagline{font-size:13px;color:var(--muted);min-width:0}
+@media (max-width:720px){.tagline{display:none}}
+
+/* ---------- controls ---------- */
+input[type=text],input[type=number],select,textarea{display:block;width:100%;max-width:100%;min-width:0;background:var(--sunk);border:1px solid var(--line);border-radius:7px;padding:0 11px;height:38px;font-size:13.5px;transition:border-color .12s,box-shadow .12s}
+select{padding-right:28px;cursor:pointer}
+input[type=text]:hover,input[type=number]:hover,select:hover,textarea:hover{border-color:var(--line-strong)}
+textarea{height:auto;padding:9px 11px;resize:vertical;line-height:1.5;min-height:68px}
+textarea.mono,input.mono{font:13px/1.5 var(--f-mono)}
+input::placeholder,textarea::placeholder{color:var(--faint)}
+input[type=text]:focus,input[type=number]:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:6px;border:1px solid var(--line-strong);background:var(--panel);color:var(--fg);font-weight:500;font-size:13px;cursor:pointer;white-space:nowrap;min-height:34px}
+.btn:hover{background:var(--sunk)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.07);background:var(--accent)}
+.btn.danger{color:var(--bad)}
+.btn.danger.armed{background:var(--bad);border-color:var(--bad);color:var(--on-bad)}
+.btn svg{width:14px;height:14px}
+
+/* ---------- main grid ---------- */
+.wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:20px;align-items:start;max-width:1560px;margin:0 auto;padding-block:18px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.form{display:flex;flex-direction:column;gap:14px;min-width:0}
+.jump{display:flex;flex-wrap:wrap;gap:6px}
+.jump button{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:4px 11px;font:500 12px var(--f-mono);color:var(--muted);cursor:pointer}
+.jump button:hover{color:var(--fg);border-color:var(--line-strong)}
+.jump button.off{opacity:.55;text-decoration:line-through}
+
+.sec{background:var(--panel);border:1px solid var(--line);border-radius:10px;scroll-margin-top:calc(var(--hdr) + env(safe-area-inset-top,0px) + 14px)}
+.sec-h{display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--line)}
+.sec-h h2{margin:0;font:600 17px/1.2 var(--f-display);letter-spacing:-.005em}
+.chip{font:500 11px var(--f-mono);color:var(--muted);background:var(--sunk);border:1px solid var(--line);border-radius:4px;padding:1px 6px}
+.sec-h .sp{flex:1}
+.sec-b{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 16px;padding:16px}
+.sec.off .sec-b{display:none}
+.sec.off .sec-h{border-bottom:0}
+.sec.off h2{color:var(--muted)}
+.sub{grid-column:1/-1;font:500 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px;margin-top:2px}
+.field{grid-column:1/-1;min-width:0}
+.field.half{grid-column:span 1}
+.field>label{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 8px;font-weight:500;font-size:13px;margin-bottom:5px}
+.field>label code,.check code{font:400 11px var(--f-mono);color:var(--faint)}
+.inh{margin-left:auto;font:500 11px var(--f-ui);color:var(--accent)}
+.meta{display:flex;gap:10px;justify-content:space-between;margin-top:4px;font-size:12px;color:var(--muted)}
+.meta .hint{min-width:0}
+.count{font:500 11px var(--f-mono);font-variant-numeric:tabular-nums;color:var(--faint);white-space:nowrap}
+.count.warn{color:var(--warn)} .count.good{color:var(--ok)}
+.check{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--sunk);cursor:pointer;font-weight:500;font-size:13px;min-height:38px}
+.check input{accent-color:var(--accent);width:16px;height:16px;margin:0}
+.check code{margin-left:auto}
+.color-row{display:flex;gap:8px;min-width:0}
+.color-row input[type=color]{flex:none;width:44px;min-width:44px;height:38px;padding:3px;border:1px solid var(--line);border-radius:6px;background:var(--sunk);cursor:pointer}
+.filebtn:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+
+.switch{position:relative;display:inline-block;width:36px;height:20px;flex:none}
+.switch input{appearance:none;-webkit-appearance:none;margin:0;width:36px;height:20px;border-radius:999px;background:var(--line-strong);cursor:pointer;transition:background .15s}
+.switch input::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:var(--panel);transition:transform .15s}
+.switch input:checked{background:var(--accent)}
+.switch input:checked::after{transform:translateX(16px)}
+
+/* ---------- output panel ---------- */
+.out{position:sticky;top:calc(var(--hdr) + env(safe-area-inset-top,0px) + 18px);height:calc(100vh - var(--hdr) - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 36px);min-height:420px;display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;min-width:0}
+.tabs{display:flex;gap:2px;padding:0 8px;border-bottom:1px solid var(--line);overflow-x:auto}
+.tab{background:none;border:0;border-bottom:2px solid transparent;padding:12px 12px 10px;font-weight:500;font-size:13px;color:var(--muted);cursor:pointer;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--accent)}
+.badge{font:600 11px/1 var(--f-mono);padding:3px 6px;border-radius:999px;background:var(--sunk);color:var(--muted);border:1px solid var(--line)}
+.badge.warn{background:var(--warn);border-color:var(--warn);color:var(--panel)}
+.badge.bad{background:var(--bad);border-color:var(--bad);color:var(--on-bad)}
+.pane{flex:1;min-height:0;display:flex;flex-direction:column}
+.pane[hidden]{display:none!important}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.toolbar .sp{flex:1}
+.tb-label{font:500 11px var(--f-mono);color:var(--faint);text-transform:uppercase;letter-spacing:.06em}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:6px;overflow:hidden}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{padding:5px 10px;font-size:12.5px;font-weight:500;cursor:pointer;color:var(--muted);border-left:1px solid var(--line)}
+.seg label:first-of-type{border-left:0}
+.seg input:checked+label{background:var(--accent-soft);color:var(--fg)}
+.seg input:focus-visible+label{outline:2px solid var(--accent);outline-offset:-2px}
+.mini{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted);cursor:pointer}
+.mini input{accent-color:var(--accent);margin:0}
+.mini select{width:auto;min-height:28px;padding:3px 6px;font-size:12.5px}
+.note{margin:0;padding:10px 14px;font-size:12.5px;color:var(--muted);background:var(--accent-soft);border-bottom:1px solid var(--line)}
+.note code{font:12px var(--f-mono);color:var(--fg)}
+.code{flex:1;min-height:0;overflow:auto;background:var(--code-bg);font:12.75px/1.7 var(--f-mono);font-variant-numeric:tabular-nums}
+.code pre{margin:0;padding-block:12px;color:var(--code-fg);font:inherit;width:max-content;min-width:100%}
+.code.is-wrapped pre{width:auto}
+.ln{display:grid;grid-template-columns:3.4em minmax(0,1fr)}
+.ln .n{position:sticky;left:0;z-index:1;background:var(--code-bg);color:var(--code-gutter);text-align:right;padding-right:12px;border-right:1px solid var(--code-edge);user-select:none}
+.ln .c{padding:0 18px 0 14px;white-space:pre}
+.code.is-wrapped .ln .c{white-space:pre-wrap;overflow-wrap:anywhere;padding-left:calc(14px + 2ch);text-indent:-2ch}
+.ln:hover .c{background:var(--code-edge)}
+.t-tag{color:var(--t-tag)} .t-attr{color:var(--t-attr)} .t-str{color:var(--t-str)} .t-com{color:var(--t-com);font-style:italic} .t-key{color:var(--t-key)} .t-num{color:var(--t-num)} .t-p{color:var(--t-p)}
+.foot{display:flex;justify-content:space-between;gap:10px;padding:7px 12px;border-top:1px solid var(--line);font:11.5px var(--f-mono);color:var(--faint);font-variant-numeric:tabular-nums}
+
+/* previews */
+.scroll{flex:1;min-height:0;overflow:auto;padding:18px;display:flex;flex-direction:column;gap:22px}
+.pv h3{margin:0 0 8px;font:500 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.serp{max-width:600px;font-family:Arial,Helvetica,sans-serif;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.serp-site{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.fav{width:26px;height:26px;border-radius:50%;background:var(--sunk);border:1px solid var(--line);display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--muted);flex:none;overflow:hidden}
+.fav img{width:18px;height:18px;object-fit:contain}
+.sn{font-size:14px;color:var(--fg);line-height:1.2}
+.su{font-size:12px;color:var(--muted);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:520px}
+.st{font-size:20px;line-height:1.3;color:var(--serp-title);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sd{font-size:14px;line-height:1.58;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:3px}
+.card{max-width:520px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--sunk)}
+.pimg{position:relative;width:100%;max-width:100%;background:repeating-linear-gradient(135deg,var(--sunk) 0 10px,var(--panel) 10px 20px);display:grid;place-items:center;border-bottom:1px solid var(--line);overflow:hidden}
+.pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph{font:500 12px var(--f-mono);color:var(--faint);text-align:center;padding:10px}
+.card-b{padding:10px 14px 12px}
+.cd{font:12px var(--f-ui);text-transform:uppercase;color:var(--muted);letter-spacing:.02em}
+.ct{font-weight:600;font-size:15.5px;line-height:1.3;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cx{font-size:13px;color:var(--muted);margin-top:3px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.xcard{max-width:520px}
+.xcard .frame{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.xcard .frame .pimg{border:0}
+.xcard .tag{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:var(--scrim);color:#fff;font-size:13px;padding:2px 8px;border-radius:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xcard .from{font-size:13px;color:var(--muted);margin-top:5px}
+.xsmall{display:flex;border:1px solid var(--line);border-radius:16px;overflow:hidden;max-width:520px}
+.xsmall .pimg{width:130px;flex:none;border-bottom:0;border-right:1px solid var(--line)}
+.xsmall .card-b{min-width:0;display:flex;flex-direction:column;justify-content:center}
+.pnote{font-size:12.5px;color:var(--muted);margin:0;max-width:62ch}
+
+/* checks */
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.checks li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:start;padding:10px 12px;border:1px solid var(--line);border-left-width:3px;border-radius:6px;background:var(--panel)}
+.checks li.bad{border-left-color:var(--bad)} .checks li.warn{border-left-color:var(--warn)} .checks li.ok{border-left-color:var(--ok)} .checks li.info{border-left-color:var(--info)}
+.sev{font:600 10.5px/1.9 var(--f-mono);text-transform:uppercase;letter-spacing:.05em;min-width:42px}
+.bad .sev{color:var(--bad)} .warn .sev{color:var(--warn)} .ok .sev{color:var(--ok)} .info .sev{color:var(--info)}
+.checks p{margin:0;font-size:13px}
+.checks code{font:12px var(--f-mono)}
+.go{background:none;border:0;color:var(--accent);font-size:12.5px;font-weight:500;cursor:pointer;padding:2px 0;white-space:nowrap}
+
+/* modal + toast */
+.scrim{position:fixed;inset:0;z-index:50;background:var(--scrim);display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.modal{width:min(720px,100%);max-height:100%;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.modal h2{margin:0;font:600 20px var(--f-display)}
+.modal p{margin:0;color:var(--muted);font-size:13px;max-width:65ch}
+.modal .row{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.err{color:var(--bad)!important}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,12px);opacity:0;pointer-events:none;background:var(--fg);color:var(--panel);padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;transition:opacity .18s,transform .18s;z-index:60;max-width:calc(100% - 32px)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- image kit ---------- */
+.kit{display:flex;flex-direction:column;gap:14px;padding:16px}
+.kit-tabs{align-self:flex-start;max-width:100%}
+.kit-pane{display:flex;flex-direction:column;gap:12px;min-width:0}
+.stage{position:relative;width:100%;max-width:100%;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--sunk);touch-action:none;cursor:grab;user-select:none}
+.stage.og{aspect-ratio:1200/630}
+.stage.icon{aspect-ratio:1/1}
+.stage.grabbing{cursor:grabbing}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage .drop{position:absolute;inset:10px;display:none;place-items:center;text-align:center;border:1.5px dashed var(--line-strong);border-radius:6px;color:var(--muted);font-size:13px;padding:12px}
+.stage .drop div{display:flex;flex-direction:column;gap:4px;max-width:34ch}
+.stage .drop strong{color:var(--fg);font-weight:600;font-size:14px}
+.stage.empty{cursor:pointer}
+.stage.empty .drop{display:grid}
+.stage.dragover .drop{display:grid;border-color:var(--accent);background:var(--accent-soft)}
+.kit-ctrls{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.range{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+.range[hidden]{display:none}
+.range input[type=range]{width:120px;accent-color:var(--accent)}
+.range select{width:auto;height:32px;padding:0 26px 0 8px;font-size:12.5px}
+.range input[type=color]{width:34px;height:30px;padding:2px;border:1px solid var(--line);border-radius:6px;background:var(--sunk);cursor:pointer}
+.icon-row{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:18px;align-items:start}
+.icon-side{display:flex;flex-direction:column;gap:16px;min-width:0}
+.side-label{font:500 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.tabstrip{background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:8px 8px 0;overflow:hidden}
+.tabmock{display:inline-flex;align-items:center;gap:8px;max-width:100%;padding:7px 16px 7px 10px;background:var(--panel);border:1px solid var(--line);border-bottom:0;border-radius:8px 8px 0 0;font-size:12px}
+.tabmock span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:200px}
+.icon-pv{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap}
+.icon-pv figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:6px}
+.icon-pv figcaption{font:11px var(--f-mono);color:var(--faint)}
+.icon-pv canvas.apple{width:90px;height:90px;border-radius:20px}
+.icon-pv canvas.round{width:72px;height:72px;border-radius:50%}
+.kit-hint{margin:0;font-size:12px;color:var(--muted);max-width:70ch}
+.kit-foot{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 12px;border-top:1px dashed var(--line);padding-top:14px}
+.kit-foot .field{flex:1 1 220px}
+.kit-files{flex-basis:100%;margin:0;font:11.5px/1.6 var(--f-mono);color:var(--faint)}
+.kit-msg{flex-basis:100%;margin:0;font-size:12.5px;color:var(--warn)}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+@media (max-width:560px){ .icon-row{grid-template-columns:minmax(0,1fr)} .stage.icon{max-width:300px} }
+
+@media (max-width:980px){
+  .wrap{grid-template-columns:minmax(0,1fr)}
+  .out{position:static;height:auto;min-height:0}
+  .code{max-height:70vh}
+  .scroll{max-height:none}
+}
+@media (max-width:560px){
+  .field.half{grid-column:1/-1}
+  .sec-b{padding:14px 12px}
+  .brand .wm{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="mark">&lt;head&gt;</span><span class="wm">Meta Head Builder</span></div>
+    <span class="tagline">Meta, Open Graph, Twitter, JSON-LD and icons for any page</span>
+    <span class="sp"></span>
+    <button class="btn" id="bImport" type="button">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v8m0 0L5 7m3 3 3-3M3 11v1.5A1.5 1.5 0 0 0 4.5 14h7a1.5 1.5 0 0 0 1.5-1.5V11"/></svg>
+      Import from HTML
+    </button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="form" id="form"></div>
+
+  <section class="out" aria-label="Output">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-code" aria-selected="true" aria-controls="pane-code" data-tab="code" type="button">Code</button>
+      <button class="tab" role="tab" id="tab-prev" aria-selected="false" aria-controls="pane-prev" data-tab="prev" type="button">Previews</button>
+      <button class="tab" role="tab" id="tab-checks" aria-selected="false" aria-controls="pane-checks" data-tab="checks" type="button">Checks <span class="badge" id="checkBadge">0</span></button>
+    </div>
+
+    <div class="pane" id="pane-code" role="tabpanel" aria-labelledby="tab-code">
+      <div class="toolbar" id="toolbar">
+        <div class="seg" role="radiogroup" aria-label="What to show">
+          <input type="radio" name="show" id="o-all" value="all" data-out="show"><label for="o-all">All tags</label>
+          <input type="radio" name="show" id="o-ld" value="ld" data-out="show"><label for="o-ld">JSON-LD</label>
+        </div>
+        <label class="mini"><input type="checkbox" id="o-com" data-out="comments"> Comments</label>
+        <label class="mini"><input type="checkbox" id="o-wrap" data-out="wrap"> Wrap lines</label>
+        <label class="mini">Indent <select id="o-ind" data-out="indent"><option value="0">0</option><option value="2">2</option><option value="4">4</option></select></label>
+        <span class="sp"></span>
+        <button class="btn primary" id="bCopy" type="button">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5"/></svg>
+          Copy code
+        </button>
+      </div>
+      <div class="code" id="codeBox"><pre id="code"></pre></div>
+      <div class="foot"><span id="stat"></span><span>Paste inside &lt;head&gt;</span></div>
+    </div>
+
+    <div class="pane" id="pane-prev" role="tabpanel" aria-labelledby="tab-prev" hidden>
+      <div class="scroll" id="previews"></div>
+    </div>
+
+    <div class="pane" id="pane-checks" role="tabpanel" aria-labelledby="tab-checks" hidden>
+      <div class="scroll"><ul class="checks" id="checks"></ul></div>
+    </div>
+  </section>
+</main>
+
+<div class="scrim" id="impModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="impTitle">
+    <h2 id="impTitle">Import tags</h2>
+    <p>Paste a <code>&lt;head&gt;</code> snippet from any site. Meta tags, Open Graph, Twitter, JSON-LD and icons are read into the form and replace what's there now.</p>
+    <label class="vh" for="impText">HTML snippet</label>
+    <textarea id="impText" class="mono" rows="12" spellcheck="false" placeholder="&lt;title&gt;…&lt;/title&gt;&#10;&lt;meta name=&quot;description&quot; content=&quot;…&quot;&gt;"></textarea>
+    <p class="err" id="impErr" hidden></p>
+    <div class="row">
+      <button class="btn" id="impCancel" type="button">Cancel</button>
+      <button class="btn primary" id="impGo" type="button">Import</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+(() => {
+'use strict';
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const clone = o => JSON.parse(JSON.stringify(o));
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+/* ================= state ================= */
+const BLANK = {
+  site:{name:'',url:'',page:'',title:'',description:'',lang:'en',locale:'en_US'},
+  seo:{author:'',canonical:'',index:true,follow:true,maxImage:'large',maxSnippet:'',extraRobots:'',themeColor:'',colorScheme:'',charset:false},
+  og:{on:true,type:'website',siteName:'',url:'',title:'',description:'',image:'',imageType:'',width:'1200',height:'630',alt:''},
+  tw:{on:true,card:'summary_large_image',site:'',creator:'',title:'',description:'',image:'',alt:''},
+  ld:{on:true,comment:true,website:true,main:'WebPage',mainName:'',category:'',subCategory:'',os:'Any',browser:'Requires JavaScript and a modern browser',free:true,price:'0',currency:'USD',screenshot:'',features:'',
+      authorOn:true,authorType:'Person',authorName:'',authorAlt:'',authorUrl:'',authorEmail:'',authorLogo:'',sameAs:''},
+  icons:{on:true,apple:'',fav32:'',fav16:'',ico:'',svg:'',manifest:''},
+  kit:{folder:'assets/images/',ogFormat:'jpg',quality:'90',ogBg:'#ffffff',iconPad:'6',iconBg:'#ffffff',iconTransparent:true},
+  out:{show:'all',comments:true,indent:'2',wrap:true}
+};
+const merge = (base, src) => {
+  if (!src || typeof src !== 'object') return base;
+  for (const k of Object.keys(base)) {
+    if (!(k in src)) continue;
+    if (base[k] && typeof base[k] === 'object') merge(base[k], src[k]);
+    else base[k] = typeof base[k] === 'boolean' ? !!src[k] : (src[k] == null ? '' : String(src[k]));
+  }
+  return base;
+};
+const SAMPLE = merge(clone(BLANK), {
+  site:{name:'Meta Head Builder',url:'https://developer-zahid.github.io/Meta-Head-Builder',page:'',
+    title:'Meta Head Builder',
+    description:'Generate Meta, Open Graph, Twitter, JSON-LD and icons for any page',
+    lang:'en',locale:'en_US'},
+  seo:{author:'Developer Zahid',index:true,follow:true,maxImage:'large',themeColor:'#171717',colorScheme:'dark'},
+  og:{on:true,type:'website',image:'assets/images/og-image.jpg',width:'1200',height:'630',
+    alt:'Meta Head Builder — a form beside the generated head tags'},
+  tw:{on:true,card:'summary_large_image',site:'@ZahidHa45112113',creator:'@ZahidHa45112113'},
+  ld:{on:true,comment:true,website:true,main:'WebApplication',category:'DeveloperApplication',subCategory:'Code generator',os:'Any',
+    browser:'Requires JavaScript and a modern browser',free:true,price:'0',currency:'USD',
+    features:['Generates meta, Open Graph, Twitter and JSON-LD tags from one form','Fields inherit from each other, so each value is typed once','Imports existing tags from any HTML head snippet','Previews Google, Facebook, LinkedIn and X cards','Checks titles, descriptions, images and robots for common SEO issues','Crops and exports an OG image, favicons and a web manifest as a zip'].join('\n'),
+    authorOn:true,authorType:'Person',authorName:'Developer Zahid',authorAlt:'Zahid Hasan Munna',authorUrl:'https://github.com/Developer-Zahid',authorEmail:'frontendcsssimplified@gmail.com',
+    sameAs:['https://github.com/Developer-Zahid','https://www.linkedin.com/in/zahid-hasan-munna/','https://x.com/ZahidHa45112113','https://www.facebook.com/coderexpertzahid/','https://www.youtube.com/@frontend-css-simplified','https://codepen.io/DeveloperZahid','https://wa.me/8801992409030'].join('\n')},
+  icons:{on:true,apple:'assets/images/apple-touch-icon.png',fav32:'assets/images/favicon-32x32.png',fav16:'assets/images/favicon-16x16.png',ico:'assets/images/favicon.ico',manifest:'assets/images/site.webmanifest'},
+  kit:{folder:'assets/images/'}
+});
+
+let S = clone(SAMPLE);
+let localImg = null; // data URL of an image loaded from disk, preview only
+
+const getP = path => path.split('.').reduce((o,k) => o?.[k], S);
+const setP = (path, v) => { const ks = path.split('.'); const last = ks.pop(); ks.reduce((o,k) => o[k], S)[last] = v; };
+
+/* ================= URL + derived values ================= */
+const MIME = {jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png',webp:'image/webp',gif:'image/gif',avif:'image/avif',svg:'image/svg+xml',ico:'image/x-icon'};
+const mimeOf = u => { const m = String(u||'').split(/[?#]/)[0].match(/\.([a-z0-9]+)$/i); return m ? (MIME[m[1].toLowerCase()] || '') : ''; };
+function siteBase(){
+  const u = S.site.url.trim(); if (!u) return '';
+  try {
+    const x = new URL(/^[a-z][a-z0-9+.-]*:/i.test(u) ? u : 'https://' + u);
+    // "https://site.io/project" is a folder (GitHub Pages and similar), so relative paths resolve inside it.
+    if (!x.pathname.endsWith('/') && !/\.[a-z0-9]+$/i.test(x.pathname)) x.pathname += '/';
+    return x.href;
+  } catch { return ''; }
+}
+function abs(v){
+  v = String(v||'').trim(); if (!v) return '';
+  if (/^[a-z][a-z0-9+.-]*:/i.test(v)) return v;
+  if (v.startsWith('//')) return 'https:' + v;
+  const b = siteBase(); if (!b) return v;
+  try { return new URL(v, b).href; } catch { return v; }
+}
+const isAbs = u => /^https?:\/\//i.test(u);
+function E(){
+  const s = S, site = siteBase() || s.site.url.trim(), page = abs(s.site.page) || site;
+  const ogTitle = s.og.title || s.site.title, ogDesc = s.og.description || s.site.description;
+  const ogImage = abs(s.og.image);
+  return {
+    site, page, canonical: abs(s.seo.canonical) || page,
+    ogSiteName: s.og.siteName || s.site.name, ogUrl: abs(s.og.url) || page,
+    ogTitle, ogDesc, ogImage, ogImageType: s.og.imageType || mimeOf(s.og.image),
+    twTitle: s.tw.title || ogTitle, twDesc: s.tw.description || ogDesc,
+    twImage: abs(s.tw.image) || ogImage, twAlt: s.tw.alt || s.og.alt,
+    ldName: s.ld.mainName || (s.ld.main === 'WebPage' ? s.site.title : s.site.name),
+    shot: abs(s.ld.screenshot) || ogImage
+  };
+}
+const lines = v => String(v||'').split('\n').map(x => x.trim()).filter(Boolean);
+function robots(){
+  const r = [S.seo.index ? 'index' : 'noindex', S.seo.follow ? 'follow' : 'nofollow'];
+  if (S.seo.maxImage) r.push('max-image-preview:' + S.seo.maxImage);
+  if (String(S.seo.maxSnippet).trim() !== '') r.push('max-snippet:' + String(S.seo.maxSnippet).trim());
+  S.seo.extraRobots.split(',').map(x => x.trim()).filter(Boolean).forEach(x => r.push(x));
+  return r.join(', ');
+}
+
+/* ================= form schema ================= */
+const APP_TYPES = ['WebApplication','SoftwareApplication','MobileApplication'];
+const isApp = () => APP_TYPES.includes(S.ld.main);
+const CATS = ['','DeveloperApplication','BusinessApplication','DesignApplication','UtilitiesApplication','EducationalApplication','MultimediaApplication','FinanceApplication','HealthApplication','LifestyleApplication','ReferenceApplication','SocialNetworkingApplication','TravelApplication','GameApplication','ShoppingApplication','SportsApplication','SecurityApplication','CommunicationApplication','EntertainmentApplication'];
+
+const SECTIONS = [
+  {id:'site', title:'Site & page', chip:'base', fields:[
+    {k:'site.name', label:'Site name', w:'half'},
+    {k:'site.url', label:'Site URL', type:'url', w:'half', hint:'Home page. Relative paths below resolve against it.'},
+    {k:'site.page', label:'Page URL', type:'url', from:() => siteBase(), hint:'Leave empty for the home page. Used for canonical and og:url.'},
+    {k:'site.title', label:'Page title', tag:'<title>', counter:[30,60]},
+    {k:'site.description', label:'Description', tag:'meta description', type:'textarea', counter:[70,160]},
+    {k:'site.lang', label:'Language', tag:'inLanguage', w:'half', mono:true},
+    {k:'site.locale', label:'Locale', tag:'og:locale', w:'half', mono:true}
+  ]},
+  {id:'seo', title:'Search & browser', chip:'meta', fields:[
+    {k:'seo.author', label:'Author', tag:'author', w:'half'},
+    {k:'seo.canonical', label:'Canonical URL', tag:'rel=canonical', type:'url', w:'half', from:() => E().page},
+    {type:'sub', label:'Robots'},
+    {k:'seo.index', label:'Allow indexing', tag:'index', type:'check', w:'half'},
+    {k:'seo.follow', label:'Follow links', tag:'follow', type:'check', w:'half'},
+    {k:'seo.maxImage', label:'Image preview size', tag:'max-image-preview', type:'select', w:'half', options:[['','Not set'],['large','large'],['standard','standard'],['none','none']]},
+    {k:'seo.maxSnippet', label:'Max snippet', tag:'max-snippet', type:'number', w:'half', hint:'-1 = no limit. Empty to omit.'},
+    {k:'seo.extraRobots', label:'Extra robots directives', type:'text', mono:true, hint:'Comma-separated, e.g. noarchive, max-video-preview:-1'},
+    {type:'sub', label:'Browser'},
+    {k:'seo.themeColor', label:'Theme color', tag:'theme-color', type:'color', w:'half'},
+    {k:'seo.colorScheme', label:'Color scheme', tag:'color-scheme', type:'select', w:'half', options:[['','Not set'],['light','light'],['dark','dark'],['light dark','light dark'],['dark light','dark light']]},
+    {k:'seo.charset', label:'Add charset and viewport tags', type:'check', hint:'Only for plain HTML. Most frameworks and Webflow already output these.'}
+  ]},
+  {id:'og', title:'Open Graph', chip:'og:*', toggle:'og.on', fields:[
+    {k:'og.type', label:'Type', tag:'og:type', type:'select', w:'half', options:[['website','website'],['article','article'],['product','product'],['profile','profile'],['book','book'],['video.other','video.other']]},
+    {k:'og.siteName', label:'Site name', tag:'og:site_name', w:'half', from:() => S.site.name},
+    {k:'og.url', label:'URL', tag:'og:url', type:'url', from:() => E().page},
+    {k:'og.title', label:'Title', tag:'og:title', from:() => S.site.title},
+    {k:'og.description', label:'Description', tag:'og:description', type:'textarea', from:() => S.site.description},
+    {k:'og.image', label:'Image', tag:'og:image', type:'url', hint:'1200 × 630 works across Facebook, LinkedIn, Slack and X.'},
+    {type:'file', k:'og.file', label:'Read size from image file', hint:'Fills width, height and type and shows the image in Previews. The file stays in this browser.'},
+    {k:'og.imageType', label:'Image type', tag:'og:image:type', type:'select', w:'half', options:[['','Auto from extension'],['image/jpeg','image/jpeg'],['image/png','image/png'],['image/webp','image/webp'],['image/gif','image/gif'],['image/avif','image/avif']]},
+    {k:'og.width', label:'Width', tag:'og:image:width', type:'number', w:'half', half2:true},
+    {k:'og.height', label:'Height', tag:'og:image:height', type:'number', w:'half'},
+    {k:'og.alt', label:'Image alt text', tag:'og:image:alt', type:'textarea', rows:2, counter:[0,420]}
+  ]},
+  {id:'tw', title:'Twitter / X', chip:'twitter:*', toggle:'tw.on', fields:[
+    {k:'tw.card', label:'Card', tag:'twitter:card', type:'select', options:[['summary_large_image','summary_large_image'],['summary','summary']]},
+    {k:'tw.site', label:'Site handle', tag:'twitter:site', w:'half', mono:true, hint:'@account of the site'},
+    {k:'tw.creator', label:'Creator handle', tag:'twitter:creator', w:'half', mono:true, from:() => S.tw.site, inheritOff:true, hint:'@account of the author'},
+    {k:'tw.title', label:'Title', tag:'twitter:title', from:() => E().ogTitle},
+    {k:'tw.description', label:'Description', tag:'twitter:description', type:'textarea', from:() => E().ogDesc},
+    {k:'tw.image', label:'Image', tag:'twitter:image', type:'url', from:() => S.og.image},
+    {k:'tw.alt', label:'Image alt text', tag:'twitter:image:alt', type:'textarea', rows:2, from:() => S.og.alt}
+  ]},
+  {id:'ld', title:'Structured data', chip:'JSON-LD', toggle:'ld.on', fields:[
+    {k:'ld.website', label:'WebSite entity', tag:'#website', type:'check'},
+    {k:'ld.main', label:'Main entity', type:'select', options:[['WebApplication','WebApplication'],['SoftwareApplication','SoftwareApplication'],['MobileApplication','MobileApplication'],['WebPage','WebPage'],['','None']]},
+    {k:'ld.mainName', label:'Name', tag:'name', from:() => E().ldName, show:() => !!S.ld.main},
+    {k:'ld.category', label:'Category', tag:'applicationCategory', type:'select', w:'half', options:CATS.map(c => [c, c || 'Not set']), show:isApp},
+    {k:'ld.subCategory', label:'Sub-category', tag:'applicationSubCategory', w:'half', show:isApp},
+    {k:'ld.os', label:'Operating system', tag:'operatingSystem', w:'half', show:isApp},
+    {k:'ld.browser', label:'Browser requirements', tag:'browserRequirements', w:'half', show:() => S.ld.main === 'WebApplication'},
+    {k:'ld.free', label:'Free to use', tag:'isAccessibleForFree', type:'check', show:isApp},
+    {k:'ld.price', label:'Price', tag:'offers.price', type:'text', w:'half', mono:true, show:isApp, hint:'Empty to omit the Offer.'},
+    {k:'ld.currency', label:'Currency', tag:'priceCurrency', w:'half', mono:true, show:isApp},
+    {k:'ld.screenshot', label:'Screenshot', tag:'screenshot', type:'url', from:() => S.og.image, show:isApp},
+    {k:'ld.features', label:'Feature list', tag:'featureList', type:'list', rows:5, show:isApp, hint:'One feature per line.'},
+    {type:'sub', label:'Author'},
+    {k:'ld.authorOn', label:'Include author entity', tag:'#author', type:'check'},
+    {k:'ld.authorType', label:'Type', type:'select', options:[['Person','Person'],['Organization','Organization']], show:() => S.ld.authorOn},
+    {k:'ld.authorName', label:'Name', tag:'name', w:'half', from:() => S.seo.author, show:() => S.ld.authorOn},
+    {k:'ld.authorAlt', label:'Alternate name', tag:'alternateName', w:'half', show:() => S.ld.authorOn},
+    {k:'ld.authorUrl', label:'URL', tag:'url', type:'url', w:'half', show:() => S.ld.authorOn},
+    {k:'ld.authorEmail', label:'Email', tag:'email', w:'half', mono:true, show:() => S.ld.authorOn},
+    {k:'ld.authorLogo', label:'Logo', tag:'logo', type:'url', show:() => S.ld.authorOn && S.ld.authorType === 'Organization'},
+    {k:'ld.sameAs', label:'Profiles', tag:'sameAs', type:'list', rows:5, show:() => S.ld.authorOn, hint:'One URL per line: GitHub, LinkedIn, X, YouTube…'},
+    {type:'sub', label:'Output'},
+    {k:'ld.comment', label:'Explanatory comment above the script', type:'check'}
+  ]},
+  {id:'icons', title:'Icons', chip:'link rel', toggle:'icons.on', fields:[
+    {k:'icons.apple', label:'Apple touch icon', tag:'180×180', type:'url'},
+    {k:'icons.fav32', label:'Favicon 32', tag:'32×32 png', type:'url', w:'half'},
+    {k:'icons.fav16', label:'Favicon 16', tag:'16×16 png', type:'url', w:'half'},
+    {k:'icons.ico', label:'favicon.ico', tag:'sizes=any', type:'url', w:'half'},
+    {k:'icons.svg', label:'SVG favicon', tag:'image/svg+xml', type:'url', w:'half'},
+    {k:'icons.manifest', label:'Web manifest', tag:'rel=manifest', type:'url'}
+  ]}
+];
+const FIELDS = SECTIONS.flatMap(s => s.fields).filter(f => f.k && f.type !== 'file');
+const fid = k => 'f-' + k.replace(/\./g, '-');
+
+function fieldHTML(f){
+  if (f.type === 'sub') return `<div class="sub">${esc(f.label)}</div>`;
+  const id = fid(f.k), half = f.w === 'half' ? ' half' : '';
+  const tag = f.tag ? `<code>${esc(f.tag)}</code>` : '';
+  const hint = f.hint ? `<span class="hint">${esc(f.hint)}</span>` : '<span class="hint"></span>';
+  const meta = (f.hint || f.counter) ? `<div class="meta">${hint}<span class="count" data-count="${f.k}"></span></div>` : '';
+  if (f.type === 'check') return `<div class="field${half}" data-f="${f.k}"><label class="check" for="${id}"><input type="checkbox" id="${id}" data-k="${f.k}"><span>${esc(f.label)}</span>${tag}</label>${meta}</div>`;
+  if (f.type === 'file') return `<div class="field" data-f="${f.k}"><label class="btn filebtn" for="ogFile">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/><circle cx="6" cy="6.5" r="1.2"/><path d="m3 12 3.5-3.5L9 11l2-2 3 3"/></svg>
+      ${esc(f.label)}<input type="file" id="ogFile" accept="image/*" class="vh"></label>${meta}</div>`;
+  const mono = (f.mono || f.type === 'url' || f.type === 'list') ? ' mono' : '';
+  let ctl;
+  if (f.type === 'select') ctl = `<select id="${id}" data-k="${f.k}">${f.options.map(([v,l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join('')}</select>`;
+  else if (f.type === 'textarea' || f.type === 'list') ctl = `<textarea id="${id}" data-k="${f.k}" class="${mono.trim()}" rows="${f.rows || 3}" spellcheck="${f.type === 'list' ? 'false' : 'true'}"></textarea>`;
+  else if (f.type === 'color') ctl = `<div class="color-row"><input type="color" id="${id}-sw" data-swatch="${f.k}" aria-label="Pick ${esc(f.label)}"><input type="text" class="mono" id="${id}" data-k="${f.k}" spellcheck="false" placeholder="#171717"></div>`;
+  else ctl = `<input type="${f.type === 'number' ? 'number' : 'text'}" id="${id}" data-k="${f.k}" class="${mono.trim()}"${f.type === 'url' ? ' inputmode="url" spellcheck="false" autocapitalize="off"' : ''}>`;
+  return `<div class="field${half}" data-f="${f.k}"><label for="${id}"><span>${esc(f.label)}</span>${tag}<span class="inh" hidden>inherited</span></label>${ctl}${meta}</div>`;
+}
+const KIT_HTML = `
+<section class="sec" id="sec-kit">
+  <div class="sec-h"><h2>Image &amp; icon kit</h2><span class="chip">zip</span><span class="sp"></span></div>
+  <div class="kit">
+    <div class="seg kit-tabs" role="radiogroup" aria-label="Image to edit">
+      <input type="radio" name="kitTab" id="kt-og" value="og" checked><label for="kt-og">OG image · 1200×630</label>
+      <input type="radio" name="kitTab" id="kt-icon" value="icon"><label for="kt-icon">Favicon &amp; app icons</label>
+    </div>
+
+    <div class="kit-pane" data-kpane="og">
+      <div class="stage og empty" data-stage="og" tabindex="0" role="img" aria-label="OG image crop area. Drag or use arrow keys to move, scroll or plus and minus to zoom.">
+        <canvas></canvas>
+        <div class="drop"><div><strong>Drop an image here</strong><span>or click to choose a file. Then drag to position and scroll to zoom.</span></div></div>
+      </div>
+      <div class="kit-ctrls">
+        <label class="btn filebtn">Choose image<input type="file" accept="image/*" class="vh" data-kfile="og"></label>
+        <label class="range">Zoom <input type="range" min="0.2" max="4" step="0.01" value="1" data-kzoom="og"></label>
+        <button class="btn" type="button" data-kfit="og">Fit</button>
+        <button class="btn" type="button" data-kfill="og">Fill</button>
+        <button class="btn danger" type="button" data-kclear="og">Remove image</button>
+        <label class="range">Format <select data-k="kit.ogFormat"><option value="jpg">JPG</option><option value="png">PNG</option></select></label>
+        <label class="range" data-kq>Quality <input type="range" min="60" max="100" step="1" data-k="kit.quality"></label>
+        <label class="range">Background <input type="color" data-k="kit.ogBg" aria-label="OG image background color"></label>
+      </div>
+    </div>
+
+    <div class="kit-pane" data-kpane="icon" hidden>
+      <div class="icon-row">
+        <div class="stage icon empty" data-stage="icon" tabindex="0" role="img" aria-label="Icon crop area. Drag or use arrow keys to move, scroll or plus and minus to zoom.">
+          <canvas></canvas>
+          <div class="drop"><div><strong>Drop a logo or mark</strong><span>Square images work best. SVG and transparent PNG are fine.</span></div></div>
+        </div>
+        <div class="icon-side">
+          <div><div class="side-label">Browser tab</div>
+            <div class="tabstrip"><div class="tabmock"><canvas width="16" height="16" data-kpv="16"></canvas><span data-ktabname>Your site</span></div></div></div>
+          <div><div class="side-label">Generated sizes</div>
+            <div class="icon-pv">
+              <figure><canvas width="16" height="16" data-kpv="16"></canvas><figcaption>16</figcaption></figure>
+              <figure><canvas width="32" height="32" data-kpv="32"></canvas><figcaption>32</figcaption></figure>
+              <figure><canvas width="180" height="180" data-kpv="180" class="apple"></canvas><figcaption>180 · iOS</figcaption></figure>
+              <figure><canvas width="192" height="192" data-kpv="192" class="round"></canvas><figcaption>192 · Android</figcaption></figure>
+            </div></div>
+        </div>
+      </div>
+      <div class="kit-ctrls">
+        <label class="btn filebtn">Choose image<input type="file" accept="image/*" class="vh" data-kfile="icon"></label>
+        <button class="btn" type="button" data-kcopy>Use OG image</button>
+        <label class="range">Zoom <input type="range" min="0.2" max="4" step="0.01" value="1" data-kzoom="icon"></label>
+        <button class="btn" type="button" data-kfit="icon">Fit</button>
+        <button class="btn" type="button" data-kfill="icon">Fill</button>
+        <button class="btn danger" type="button" data-kclear="icon">Remove image</button>
+        <label class="range">Padding <input type="range" min="0" max="25" step="1" data-k="kit.iconPad"></label>
+        <label class="mini"><input type="checkbox" data-k="kit.iconTransparent"> Transparent</label>
+        <label class="range">Background <input type="color" data-k="kit.iconBg" aria-label="Icon background color"></label>
+      </div>
+      <p class="kit-hint">The 180px Apple icon always gets the background color, because iOS shows transparent areas as black.</p>
+    </div>
+
+    <div class="kit-foot">
+      <div class="field"><label for="f-kit-folder"><span>Asset folder</span><code>relative to the Site URL</code></label><input type="text" id="f-kit-folder" class="mono" data-k="kit.folder" spellcheck="false"></div>
+      <button class="btn primary" type="button" id="kitZip">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v8m0 0L5 7m3 3 3-3M3 11v1.5A1.5 1.5 0 0 0 4.5 14h7a1.5 1.5 0 0 0 1.5-1.5V11"/></svg>
+        Download ZIP</button>
+      <p class="kit-files" id="kitFiles"></p>
+      <p class="kit-msg" id="kitMsg" hidden></p>
+    </div>
+  </div>
+</section>`;
+function renderForm(){
+  const chips = SECTIONS.map(s => [s.id, s.chip]).concat([['kit', 'images']]);
+  const jump = `<nav class="jump" aria-label="Sections">${chips.map(([id, chip]) => `<button type="button" data-jump="${id}">${esc(chip)}</button>`).join('')}</nav>`;
+  $('#form').innerHTML = jump + SECTIONS.map(s => `
+    <section class="sec" id="sec-${s.id}">
+      <div class="sec-h"><h2>${esc(s.title)}</h2><span class="chip">${esc(s.chip)}</span><span class="sp"></span>
+        ${s.toggle ? `<span class="switch"><input type="checkbox" data-k="${s.toggle}" aria-label="Include ${esc(s.title)}"></span>` : ''}</div>
+      <div class="sec-b">${s.fields.map(fieldHTML).join('')}</div>
+    </section>`).join('') + KIT_HTML;
+}
+const hex6 = v => /^#[0-9a-f]{6}$/i.test(v) ? v : (/^#[0-9a-f]{3}$/i.test(v) ? '#' + v.slice(1).split('').map(c => c + c).join('') : '');
+function fillForm(){
+  $$('[data-k]', $('#form')).forEach(el => {
+    const v = getP(el.dataset.k);
+    if (el.type === 'checkbox') el.checked = !!v; else el.value = v ?? '';
+  });
+  $$('[data-swatch]').forEach(el => { el.value = hex6(getP(el.dataset.swatch)) || '#000000'; });
+  $$('[data-out]', $('#toolbar')).forEach(el => {
+    const v = S.out[el.dataset.out];
+    if (el.type === 'radio') el.checked = el.value === v;
+    else if (el.type === 'checkbox') el.checked = !!v;
+    else el.value = v;
+  });
+}
+function refreshFields(){
+  for (const f of FIELDS) {
+    const wrap = $(`[data-f="${f.k}"]`); if (!wrap) continue;
+    if (f.show) wrap.hidden = !f.show();
+    const input = $(`[data-k="${f.k}"]`, wrap);
+    if (f.from && input) {
+      const inh = String(f.from() ?? '');
+      input.placeholder = inh;
+      const badge = $('.inh', wrap); if (badge) badge.hidden = !(input.value === '' && inh !== '');
+    }
+    if (f.counter) {
+      const c = $(`[data-count="${f.k}"]`); const n = String(getP(f.k) || '').length; const [lo, hi] = f.counter;
+      c.textContent = `${n} / ${hi}`;
+      c.className = 'count' + (n === 0 ? '' : (n > hi || n < lo) ? ' warn' : ' good');
+    }
+  }
+  SECTIONS.forEach(s => {
+    if (!s.toggle) return;
+    const on = !!getP(s.toggle);
+    $('#sec-' + s.id).classList.toggle('off', !on);
+    $(`[data-jump="${s.id}"]`).classList.toggle('off', !on);
+  });
+}
+
+/* ================= code generation ================= */
+const clean = o => {
+  if (Array.isArray(o)) { const a = o.map(clean).filter(v => v !== undefined); return a.length ? a : undefined; }
+  if (o && typeof o === 'object') {
+    const r = {}; for (const [k, v] of Object.entries(o)) { const c = clean(v); if (c !== undefined) r[k] = c; }
+    return Object.keys(r).length ? r : undefined;
+  }
+  return (o === '' || o == null) ? undefined : o;
+};
+function buildLD(){
+  const L = S.ld, e = E(), g = [];
+  const site = e.site || e.page, page = e.page || site;
+  const authorName = L.authorName || S.seo.author;
+  const authorId = L.authorOn && authorName ? site + (L.authorType === 'Organization' ? '#organization' : '#author') : '';
+  const aRef = authorId ? {'@id': authorId} : undefined;
+  const wRef = L.website ? {'@id': site + '#website'} : undefined;
+  if (L.website) g.push({'@type':'WebSite','@id':site + '#website',url:site,name:S.site.name,description:S.site.description,inLanguage:S.site.lang,publisher:aRef});
+  if (L.main === 'WebPage') {
+    g.push({'@type':'WebPage','@id':page + '#webpage',url:page,name:e.ldName,description:S.site.description,inLanguage:S.site.lang,
+      primaryImageOfPage: e.ogImage ? {'@type':'ImageObject',url:e.ogImage} : undefined, author:aRef, isPartOf:wRef});
+  } else if (APP_TYPES.includes(L.main)) {
+    const frag = L.main === 'WebApplication' ? '#webapp' : '#app';
+    g.push({'@type':L.main,'@id':page + frag,url:page,name:e.ldName,description:S.site.description,
+      applicationCategory:L.category,applicationSubCategory:L.subCategory,operatingSystem:L.os,
+      browserRequirements: L.main === 'WebApplication' ? L.browser : undefined,
+      isAccessibleForFree: L.free ? true : undefined, inLanguage:S.site.lang, screenshot:e.shot,
+      offers: String(L.price).trim() !== '' ? {'@type':'Offer',price:String(L.price).trim(),priceCurrency:L.currency} : undefined,
+      featureList: lines(L.features), author:aRef, creator:aRef, isPartOf:wRef});
+  }
+  if (authorId) {
+    const email = L.authorEmail.trim();
+    g.push({'@type':L.authorType,'@id':authorId,name:authorName,alternateName:L.authorAlt,url:abs(L.authorUrl),
+      email: email ? (email.startsWith('mailto:') ? email : 'mailto:' + email) : '',
+      logo: L.authorType === 'Organization' ? abs(L.authorLogo) : '', sameAs: lines(L.sameAs)});
+  }
+  const graph = g.map(clean).filter(Boolean);
+  return graph.length ? {'@context':'https://schema.org','@graph':graph} : null;
+}
+function ldLines(base, withComment){
+  const data = buildLD(); if (!data) return [];
+  const out = [];
+  if (withComment) {
+    const types = data['@graph'].map(x => x['@type']);
+    const list = types.length > 1 ? types.slice(0, -1).join(', ') + ' and ' + types.at(-1) : types[0];
+    out.push('\x3C!--');
+    out.push(`  Structured data. ${types.length > 1 ? `${list} share one @graph and reference each other by @id.` : `A single ${list} entity.`}`);
+    out.push('  Validate at https://validator.schema.org/ after editing.');
+    out.push('-->');
+  }
+  out.push('\x3Cscript type="application/ld+json">');
+  JSON.stringify(data, null, 2).replace(/<\/(script)/gi, '<\\/$1').split('\n').forEach(l => out.push('  ' + l));
+  out.push('\x3C/script>');
+  return out.map(l => base + l);
+}
+function gen(){
+  const s = S, e = E(), C = s.out.comments;
+  const base = ' '.repeat(+s.out.indent || 0);
+  if (s.out.show === 'ld') return s.ld.on ? ldLines(base, C && s.ld.comment).join('\n') : '';
+  const L = [];
+  const p = t => L.push(base + t);
+  const gap = () => { if (L.length && L.at(-1) !== '') L.push(''); };
+  const meta = (attr, key, val) => { if (val !== '' && val != null) p(`<meta ${attr}="${key}" content="${esc(val)}">`); };
+
+  if (s.seo.charset) { p('<meta charset="utf-8">'); p('<meta name="viewport" content="width=device-width, initial-scale=1">'); }
+  if (s.site.title) p(`<title>${esc(s.site.title)}</title>`);
+  meta('name', 'description', s.site.description);
+  meta('name', 'author', s.seo.author);
+  meta('name', 'robots', robots());
+  meta('name', 'theme-color', s.seo.themeColor.trim());
+  meta('name', 'color-scheme', s.seo.colorScheme);
+  if (e.canonical) p(`<link href="${esc(e.canonical)}" rel="canonical">`);
+
+  if (s.og.on) {
+    gap(); if (C) p('\x3C!-- Open Graph -->');
+    meta('property', 'og:type', s.og.type);
+    meta('property', 'og:site_name', e.ogSiteName);
+    meta('property', 'og:locale', s.site.locale);
+    meta('property', 'og:url', e.ogUrl);
+    { meta('property', 'og:title', e.ogTitle); meta('property', 'og:description', e.ogDesc); meta('property', 'og:image', e.ogImage); }
+    if (e.ogImage) {
+      meta('property', 'og:image:type', e.ogImageType);
+      meta('property', 'og:image:width', String(s.og.width).trim());
+      meta('property', 'og:image:height', String(s.og.height).trim());
+      meta('property', 'og:image:alt', s.og.alt);
+    }
+  }
+  if (s.tw.on) {
+    gap(); if (C) p('\x3C!-- Twitter / X -->');
+    meta('name', 'twitter:card', s.tw.card);
+    meta('name', 'twitter:site', s.tw.site.trim());
+    meta('name', 'twitter:creator', s.tw.creator.trim() || s.tw.site.trim());
+    { meta('name', 'twitter:title', e.twTitle); meta('name', 'twitter:description', e.twDesc); meta('name', 'twitter:image', e.twImage); }
+    if (e.twImage) meta('name', 'twitter:image:alt', e.twAlt);
+  }
+  if (s.ld.on) {
+    const ld = ldLines(base, C && s.ld.comment);
+    if (ld.length) { gap(); L.push(...ld); }
+  }
+  if (s.icons.on) {
+    const I = s.icons, rows = [];
+    const typ = u => { const m = mimeOf(u); return m ? ` type="${m}"` : ''; };
+    if (I.apple) rows.push(`<link rel="apple-touch-icon" sizes="180x180" href="${esc(abs(I.apple))}">`);
+    if (I.fav32) rows.push(`<link rel="icon"${typ(I.fav32)} sizes="32x32" href="${esc(abs(I.fav32))}">`);
+    if (I.ico) rows.push(`<link rel="icon" href="${esc(abs(I.ico))}" sizes="any">`);
+    if (I.fav16) rows.push(`<link rel="icon"${typ(I.fav16)} sizes="16x16" href="${esc(abs(I.fav16))}">`);
+    if (I.svg) rows.push(`<link rel="icon" type="image/svg+xml" href="${esc(abs(I.svg))}">`);
+    if (I.manifest) rows.push(`<link rel="manifest" href="${esc(abs(I.manifest))}">`);
+    if (rows.length) { gap(); if (C) p('\x3C!-- Icons -->'); rows.forEach(p); }
+  }
+  while (L.length && L.at(-1) === '') L.pop();
+  return L.join('\n');
+}
+
+/* ================= highlighting ================= */
+const punc = t => esc(t).replace(/([{}\[\],:])/g, '<span class="t-p">$1</span>');
+function hlJSON(s){
+  const re = /("(?:\\.|[^"\\])*")(\s*:)?|\b(true|false|null)\b|(-?\d+(?:\.\d+)?)/g;
+  let o = '', last = 0, m;
+  while ((m = re.exec(s))) {
+    o += punc(s.slice(last, m.index));
+    if (m[1]) o += m[2] ? `<span class="t-key">${esc(m[1])}</span>${punc(m[2])}` : `<span class="t-str">${esc(m[1])}</span>`;
+    else o += `<span class="t-num">${m[3] || m[4]}</span>`;
+    last = re.lastIndex;
+  }
+  return o + punc(s.slice(last));
+}
+const hlTag = t => esc(t)
+  .replace(/^(&lt;\/?)([\w:-]+)/, (m, a, b) => `<span class="t-p">${a}</span><span class="t-tag">${b}</span>`)
+  .replace(/([\w:-]+)(=)(&quot;.*?&quot;)/g, (m, a, b, c) => `<span class="t-attr">${a}</span><span class="t-p">${b}</span><span class="t-str">${c}</span>`)
+  .replace(/(\/?&gt;)$/, '<span class="t-p">$1</span>');
+function hl(src){
+  let o = '', i = 0; const n = src.length;
+  while (i < n) {
+    if (src.startsWith('\x3C!--', i)) { let j = src.indexOf('-->', i); j = j < 0 ? n : j + 3; o += `<span class="t-com">${esc(src.slice(i, j))}</span>`; i = j; }
+    else if (src[i] === '<') {
+      let j = src.indexOf('>', i); j = j < 0 ? n : j + 1; const tag = src.slice(i, j); o += hlTag(tag); i = j;
+      if (/^\x3Cscript\b[^>]*ld\+json/i.test(tag)) { let k = src.indexOf('\x3C/script', i); if (k < 0) k = n; o += hlJSON(src.slice(i, k)); i = k; }
+    } else { let j = src.indexOf('<', i); if (j < 0) j = n; o += esc(src.slice(i, j)); i = j; }
+  }
+  return o;
+}
+
+/* ================= render output ================= */
+let codeText = '';
+function renderCode(){
+  codeText = gen();
+  const rows = codeText ? hlLines(codeText) : ['<span class="t-com">&lt;!-- Nothing to output yet. Fill in the form, or switch a section on. --&gt;</span>'];
+  $('#code').innerHTML = rows.map((h, i) => `<div class="ln"><span class="n">${i + 1}</span><span class="c">${h || ' '}</span></div>`).join('');
+  $('#codeBox').classList.toggle('is-wrapped', !!S.out.wrap);
+  const n = codeText ? rows.length : 0;
+  $('#stat').textContent = `${n} lines · ${codeText.length.toLocaleString()} chars`;
+}
+// Highlight line by line so each line can sit in its own numbered row (needed for wrapping).
+function hlLines(src){
+  let inCom = false, inJSON = false;
+  return src.split('\n').map(line => {
+    const t = line.trim();
+    if (inCom || t.startsWith('\x3C!--')) { inCom = !line.includes('--\x3E'); return `<span class="t-com">${esc(line)}</span>`; }
+    if (inJSON && !t.startsWith('\x3C/script')) return hlJSON(line);
+    if (t.startsWith('\x3C/script')) inJSON = false;
+    else if (/\x3Cscript\b[^>]*ld\+json/i.test(line)) inJSON = true;
+    return hl(line);
+  });
+}
+
+const hostOf = u => { try { return new URL(u).host; } catch { return ''; } };
+function imgBox(src, ratio, label){
+  return `<div class="pimg" style="aspect-ratio:${ratio}"><div class="ph">${esc(label)}</div>${src ? `<img alt="" src="${esc(src)}" data-pimg>` : ''}</div>`;
+}
+function renderPreview(){
+  const s = S, e = E();
+  const url = e.canonical || e.page, host = hostOf(url) || 'your-site.com';
+  let path = ''; try { path = new URL(url).pathname.split('/').filter(Boolean).join(' › '); } catch {}
+  const name = s.site.name || host;
+  const w = +s.og.width || 0, h = +s.og.height || 0;
+  const dims = w && h ? `${w} × ${h}` : 'size not set';
+  const local = kitPv.og || localImg;
+  const src = local || e.ogImage;
+  const twSrc = local && (!s.tw.image || s.tw.image === s.og.image) ? local : e.twImage;
+  const label = src ? (local ? dims : `${dims}\nremote image`) : 'No og:image';
+  const big = s.tw.card === 'summary_large_image';
+  $('#previews').innerHTML = `
+    <div class="pv"><h3>Google search</h3>
+      <div class="serp">
+        <div class="serp-site"><span class="fav">${kitPv.icon ? `<img src="${kitPv.icon}" alt="">` : esc((name[0] || '?').toUpperCase())}</span><div style="min-width:0"><div class="sn">${esc(name)}</div><div class="su">${esc('https://' + host + (path ? ' › ' + path : ''))}</div></div></div>
+        <div class="st">${esc(s.site.title || 'Page title missing')}</div>
+        <div class="sd">${esc(s.site.description || 'Add a description. Google may write its own snippet from page text when this is missing.')}</div>
+      </div></div>
+    ${s.og.on ? `<div class="pv"><h3>Facebook · LinkedIn · Slack</h3>
+      <div class="card">${imgBox(src, '1.91 / 1', label)}
+        <div class="card-b"><div class="cd">${esc(host)}</div><div class="ct">${esc(e.ogTitle || 'Title missing')}</div><div class="cx">${esc(e.ogDesc)}</div></div>
+      </div></div>` : ''}
+    ${s.tw.on ? `<div class="pv"><h3>X · ${esc(s.tw.card)}</h3>
+      ${big ? `<div class="xcard"><div class="frame">${imgBox(twSrc, '1.91 / 1', twSrc ? label : 'No twitter:image')}<span class="tag">${esc(e.twTitle || host)}</span></div><div class="from">From ${esc(host)}</div></div>`
+            : `<div class="xsmall">${imgBox(twSrc, '1 / 1', twSrc ? '1:1' : 'No image')}<div class="card-b"><div class="cd">${esc(host)}</div><div class="ct">${esc(e.twTitle)}</div><div class="cx">${esc(e.twDesc)}</div></div></div>`}
+      </div>` : ''}
+    <p class="pnote">Remote images can't load inside this tool. Use <strong>Read size from image file</strong> in Open Graph to see your real image here. Previews approximate each platform's layout; truncation follows real width limits.</p>`;
+  $$('[data-pimg]', $('#previews')).forEach(img => img.addEventListener('error', () => img.remove(), {once:true}));
+}
+
+/* ================= checks ================= */
+function renderChecks(){
+  const s = S, e = E(), out = [];
+  const add = (sev, html, k) => out.push({sev, html, k});
+  const tl = s.site.title.length, dl = s.site.description.length;
+  if (!s.site.url.trim()) add('bad', 'Add a <b>Site URL</b>. Canonical, og:url, icons and JSON-LD ids need an absolute address.', 'site.url');
+  else if (!/^https:\/\//i.test(siteBase())) add('warn', 'Site URL is not HTTPS.', 'site.url');
+  if (!tl) add('bad', 'Page title is empty.', 'site.title');
+  else if (tl > 60) add('warn', `Title is ${tl} characters. Google usually cuts off around 60.`, 'site.title');
+  else if (tl < 30) add('warn', `Title is only ${tl} characters. 30–60 gives search results more to show.`, 'site.title');
+  if (!dl) add('bad', 'Description is empty.', 'site.description');
+  else if (dl > 160) add('warn', `Description is ${dl} characters. Expect truncation past about 160.`, 'site.description');
+  else if (dl < 70) add('warn', `Description is ${dl} characters. 70–160 reads better in results.`, 'site.description');
+  if (!s.seo.index) add('warn', 'Robots is set to <code>noindex</code>. Search engines will drop this page.', 'seo.index');
+  if (!s.seo.follow) add('info', 'Robots is set to <code>nofollow</code>.', 'seo.follow');
+  if (s.seo.themeColor && !(window.CSS && CSS.supports('color', s.seo.themeColor.trim()))) add('bad', `<code>${esc(s.seo.themeColor)}</code> is not a valid CSS color.`, 'seo.themeColor');
+  if (s.site.locale && !/^[a-z]{2,3}_[A-Z]{2}$/.test(s.site.locale)) add('warn', 'og:locale should look like <code>en_US</code>.', 'site.locale');
+  const rel = [['og.image', s.og.image], ['tw.image', s.tw.image], ['icons.apple', s.icons.apple], ['icons.fav32', s.icons.fav32], ['seo.canonical', s.seo.canonical]]
+    .filter(([, v]) => v && !isAbs(abs(v)));
+  rel.forEach(([k]) => add('bad', `<code>${k}</code> is relative and there's no Site URL to resolve it. Social platforms need absolute URLs.`, k));
+  if (s.og.on) {
+    if (!s.og.image) add('bad', 'No <code>og:image</code>. Shares will show without a picture.', 'og.image');
+    else {
+      if (!s.og.alt) add('warn', 'Add <code>og:image:alt</code> for screen-reader users.', 'og.alt');
+      const w = +s.og.width, h = +s.og.height;
+      if (!w || !h) add('warn', 'Add image width and height so platforms render the card on the first share.', 'og.width');
+      else {
+        if (Math.abs(w / h - 1.91) > 0.08) add('warn', `Image ratio is ${(w / h).toFixed(2)}:1. Large cards expect about 1.91:1 (1200 × 630).`, 'og.width');
+        if (w < 1200) add('info', `Image is ${w}px wide. 1200px stays sharp on high-density screens.`, 'og.width');
+      }
+      if (!E().ogImageType) add('info', 'Image type could not be read from the extension. Pick one or leave it out.', 'og.imageType');
+    }
+    if (e.ogUrl && e.canonical && e.ogUrl !== e.canonical) add('warn', 'og:url and canonical differ. They usually should match.', 'og.url');
+  }
+  if (s.tw.on) {
+    [['tw.site', s.tw.site], ['tw.creator', s.tw.creator]].forEach(([k, v]) => { if (v && !v.trim().startsWith('@')) add('warn', `<code>${k === 'tw.site' ? 'twitter:site' : 'twitter:creator'}</code> should start with @.`, k); });
+    if (s.tw.card === 'summary_large_image' && !e.twImage) add('warn', 'Large-image card with no image. X falls back to a plain link.', 'tw.image');
+  }
+  if (s.ld.on) {
+    if (!buildLD()) add('warn', 'Structured data is on but has no entities. Turn on WebSite, a main entity or the author.', 'ld.website');
+    if (s.ld.authorOn && !(s.ld.authorName || s.seo.author)) add('bad', 'Author entity has no name, so it is left out.', 'ld.authorName');
+    if (s.ld.authorOn && s.ld.authorEmail && !s.ld.authorEmail.includes('@')) add('warn', 'Author email does not look like an address.', 'ld.authorEmail');
+    lines(s.ld.sameAs).filter(u => !isAbs(u)).forEach(u => add('warn', `Profile <code>${esc(u)}</code> is not an absolute URL.`, 'ld.sameAs'));
+    if (isApp() && !s.ld.category) add('info', 'Google uses <code>applicationCategory</code> for software rich results.', 'ld.category');
+    if (isApp() && String(s.ld.price).trim() === '') add('info', 'Without an Offer, Google will not show software rich results.', 'ld.price');
+  }
+
+  const order = {bad:0, warn:1, info:2};
+  out.sort((a, b) => order[a.sev] - order[b.sev]);
+  if (!out.length) out.push({sev:'ok', html:'No issues found. Paste the code and run it through the Rich Results Test before launch.'});
+  const LABEL = {bad:'Fix', warn:'Check', info:'Note', ok:'Pass'};
+  $('#checks').innerHTML = out.map(c => `<li class="${c.sev}"><span class="sev">${LABEL[c.sev]}</span><p>${c.html}</p>${c.k ? `<button class="go" type="button" data-go="${c.k}">Go to field</button>` : '<span></span>'}</li>`).join('');
+  const bad = out.filter(c => c.sev === 'bad').length, warn = out.filter(c => c.sev === 'warn').length;
+  const b = $('#checkBadge'); b.textContent = bad + warn; b.className = 'badge' + (bad ? ' bad' : warn ? ' warn' : '');
+}
+
+function update(){ refreshFields(); renderCode(); renderPreview(); renderChecks(); kitDraw(); scheduleSave(); }
+
+/* ================= storage ================= */
+const LS = {
+  get(k){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : null; } catch { return null; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } }
+};
+// The form quietly keeps its last state in this browser, so a reload doesn't lose work.
+let saveT;
+function scheduleSave(){ clearTimeout(saveT); saveT = setTimeout(() => LS.set('mhb.draft.v2', S), 350); }
+function boot(){
+  S = merge(clone(BLANK), LS.get('mhb.draft.v2') || SAMPLE);
+  renderForm(); bindKit(); fillForm(); update();
+}
+
+/* ================= import ================= */
+function parseHead(html){
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+  const st = clone(BLANK);
+  const q = n => (doc.querySelector(`meta[name="${n}"]`) || doc.querySelector(`meta[property="${n}"]`))?.getAttribute('content') ?? '';
+  const href = sel => doc.querySelector(sel)?.getAttribute('href') || '';
+  st.site.title = (doc.querySelector('title')?.textContent || '').trim();
+  st.site.description = q('description');
+  st.seo.author = q('author'); st.seo.themeColor = q('theme-color'); st.seo.colorScheme = q('color-scheme');
+  const rob = q('robots');
+  if (rob) {
+    st.seo.maxImage = ''; const extra = [];
+    rob.split(',').map(x => x.trim().toLowerCase()).filter(Boolean).forEach(t => {
+      if (t === 'noindex') st.seo.index = false; else if (t === 'nofollow') st.seo.follow = false;
+      else if (t === 'none') { st.seo.index = false; st.seo.follow = false; }
+      else if (t === 'index' || t === 'follow' || t === 'all') {}
+      else if (t.startsWith('max-image-preview:')) st.seo.maxImage = t.split(':')[1];
+      else if (t.startsWith('max-snippet:')) st.seo.maxSnippet = t.split(':')[1];
+      else extra.push(t);
+    });
+    st.seo.extraRobots = extra.join(', ');
+  }
+  const canonical = href('link[rel~="canonical"]');
+  const og = k => q('og:' + k);
+  st.og.on = !!doc.querySelector('meta[property^="og:"]');
+  st.og.type = og('type') || 'website'; st.og.siteName = og('site_name'); st.site.locale = og('locale') || st.site.locale;
+  st.og.url = og('url'); st.og.title = og('title'); st.og.description = og('description'); st.og.image = og('image') || og('image:url');
+  st.og.imageType = og('image:type'); st.og.width = og('image:width'); st.og.height = og('image:height'); st.og.alt = og('image:alt');
+  const tw = k => q('twitter:' + k);
+  st.tw.on = !!(doc.querySelector('meta[name^="twitter:"]') || doc.querySelector('meta[property^="twitter:"]'));
+  st.tw.card = tw('card') === 'summary' ? 'summary' : 'summary_large_image';
+  st.tw.site = tw('site'); st.tw.creator = tw('creator'); st.tw.title = tw('title'); st.tw.description = tw('description');
+  st.tw.image = tw('image'); st.tw.alt = tw('image:alt');
+
+  const items = [];
+  doc.querySelectorAll('script[type="application/ld+json"]').forEach(sc => {
+    try { const d = JSON.parse(sc.textContent); const arr = Array.isArray(d) ? d : (d['@graph'] || [d]); items.push(...arr); } catch {}
+  });
+  st.ld.on = items.length > 0; st.ld.website = false; st.ld.main = ''; st.ld.authorOn = false;
+  let siteUrl = '';
+  const typeOf = it => [].concat(it['@type'] || []);
+  for (const it of items) {
+    const t = typeOf(it);
+    if (t.includes('WebSite')) { st.ld.website = true; siteUrl = it.url || siteUrl; st.site.name = st.site.name || it.name || ''; if (it.inLanguage) st.site.lang = it.inLanguage; }
+    const app = t.find(x => APP_TYPES.includes(x));
+    if (app || t.includes('WebPage')) {
+      st.ld.main = app || 'WebPage'; st.ld.mainName = it.name || '';
+      if (app) {
+        st.ld.category = it.applicationCategory || ''; st.ld.subCategory = it.applicationSubCategory || '';
+        st.ld.os = it.operatingSystem || ''; st.ld.browser = it.browserRequirements || ''; st.ld.free = !!it.isAccessibleForFree;
+        const off = [].concat(it.offers || [])[0]; st.ld.price = off ? String(off.price ?? '') : ''; st.ld.currency = off?.priceCurrency || 'USD';
+        st.ld.screenshot = typeof it.screenshot === 'string' ? it.screenshot : (it.screenshot?.url || '');
+        st.ld.features = [].concat(it.featureList || []).join('\n');
+      }
+      if (!st.site.lang && it.inLanguage) st.site.lang = it.inLanguage;
+    }
+    if (t.includes('Person') || t.includes('Organization')) {
+      if (st.ld.authorOn) continue;
+      st.ld.authorOn = true; st.ld.authorType = t.includes('Organization') ? 'Organization' : 'Person';
+      st.ld.authorName = it.name || ''; st.ld.authorAlt = [].concat(it.alternateName || [])[0] || ''; st.ld.authorUrl = it.url || '';
+      st.ld.authorEmail = String(it.email || '').replace(/^mailto:/, ''); st.ld.authorLogo = typeof it.logo === 'string' ? it.logo : (it.logo?.url || '');
+      st.ld.sameAs = [].concat(it.sameAs || []).join('\n');
+    }
+  }
+  st.icons.apple = href('link[rel~="apple-touch-icon"]');
+  st.icons.fav32 = href('link[rel~="icon"][sizes="32x32"]');
+  st.icons.fav16 = href('link[rel~="icon"][sizes="16x16"]');
+  st.icons.svg = href('link[rel~="icon"][type="image/svg+xml"]');
+  st.icons.ico = href('link[rel~="icon"][href*=".ico"]');
+  st.icons.manifest = href('link[rel~="manifest"]');
+  st.icons.on = !!(st.icons.ico || st.icons.apple || st.icons.fav32 || st.icons.fav16 || st.icons.svg || st.icons.manifest);
+
+  // Site URL from the best signal, then clear values that only repeat what they would inherit.
+  const anyUrl = siteUrl || st.og.url || canonical;
+  if (anyUrl) { try { st.site.url = siteUrl || new URL(anyUrl).origin + '/'; } catch { st.site.url = anyUrl; } }
+  if (!st.site.name) st.site.name = st.og.siteName;
+  const prev = S; S = st;
+  const n = u => abs(u);
+  const page = n(st.og.url || canonical);
+  if (page && page !== siteBase()) st.site.page = page;
+  if (n(st.og.url) === E().page) st.og.url = '';
+  if (n(canonical) !== E().page) st.seo.canonical = canonical;
+  if (st.og.siteName === st.site.name) st.og.siteName = '';
+  if (st.og.title === st.site.title) st.og.title = '';
+  if (st.og.description === st.site.description) st.og.description = '';
+  if (st.og.imageType === mimeOf(st.og.image)) st.og.imageType = '';
+  if (st.tw.title === E().ogTitle) st.tw.title = '';
+  if (st.tw.description === E().ogDesc) st.tw.description = '';
+  if (st.tw.image && n(st.tw.image) === n(st.og.image)) st.tw.image = '';
+  if (st.tw.alt === st.og.alt) st.tw.alt = '';
+  if (st.tw.creator === st.tw.site) st.tw.creator = st.tw.creator; // keep explicit creator
+  if (st.ld.mainName && st.ld.mainName === E().ldName) st.ld.mainName = '';
+  if (st.ld.screenshot && n(st.ld.screenshot) === n(st.og.image)) st.ld.screenshot = '';
+  if (st.ld.authorName && st.ld.authorName === st.seo.author) st.ld.authorName = st.seo.author;
+  // Relative asset paths read better than absolute ones on the same origin.
+  const base = siteBase();
+  if (base) {
+    const origin = new URL(base).origin;
+    const rel = v => (v && v.startsWith(origin + '/')) ? v.slice(origin.length) : v;
+    st.og.image = rel(st.og.image); st.tw.image = rel(st.tw.image); st.ld.screenshot = rel(st.ld.screenshot);
+    Object.keys(st.icons).forEach(k => { if (typeof st.icons[k] === 'string') st.icons[k] = rel(st.icons[k]); });
+  }
+  st.out = clone(prev.out);
+  S = prev;
+  return st;
+}
+function readImport(){
+  const txt = $('#impText').value.trim(), err = $('#impErr');
+  err.hidden = true;
+  if (!txt) { err.textContent = 'Paste a snippet or project JSON first.'; err.hidden = false; return null; }
+  if (txt.startsWith('{')) {
+    try {
+      const d = JSON.parse(txt);
+      if (d && d.state && d.state.site) return {name: d.name || d.state.site.name || 'Imported project', state: merge(clone(BLANK), d.state)};
+      if (d && d.site) return {name: d.site.name || 'Imported project', state: merge(clone(BLANK), d)};
+    } catch {}
+    err.textContent = 'That JSON is not a project from this tool. Paste HTML tags or a copied project.'; err.hidden = false; return null;
+  }
+  const st = parseHead(txt);
+  if (!st.site.title && !st.site.description && !st.og.on && !st.tw.on && !st.ld.on && !st.icons.on) {
+    err.textContent = 'No meta tags, JSON-LD or icon links were found in that text.'; err.hidden = false; return null;
+  }
+  return {name: st.site.name || st.site.title || 'Imported project', state: st};
+}
+const openModal = () => { $('#impModal').hidden = false; $('#impErr').hidden = true; setTimeout(() => $('#impText').focus(), 0); };
+const closeModal = () => { $('#impModal').hidden = true; $('#bImport').focus(); };
+
+/* ================= copy + toast ================= */
+let toastT;
+function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 1800); }
+function copy(text, okMsg){
+  const fallback = () => {
+    const ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    let ok = false; try { ok = document.execCommand('copy'); } catch {}
+    ta.remove();
+    if (ok) toast(okMsg);
+    else { const r = document.createRange(); r.selectNodeContents($('#code')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast('Selected. Press Ctrl/Cmd + C to copy.'); }
+  };
+  try { navigator.clipboard.writeText(text).then(() => toast(okMsg), fallback); } catch { fallback(); }
+}
+
+/* ================= image kit ================= */
+// Each editor keeps the image, a zoom relative to "cover", and the image point (cx, cy) that sits at the frame centre.
+// Drawing uses the frame's own size, so the on-screen stage and every exported size crop identically.
+const KIT = {
+  og:   {W:1200, H:630, img:null, url:'', name:'', zoom:1, cx:0, cy:0},
+  icon: {W:512,  H:512, img:null, url:'', name:'', zoom:1, cx:0, cy:0}
+};
+const imW = e => e.img.naturalWidth, imH = e => e.img.naturalHeight;
+const coverS = (e, W, H) => Math.max(W / imW(e), H / imH(e));
+const fitZoom = e => Math.min(e.W / imW(e), e.H / imH(e)) / coverS(e, e.W, e.H);
+const canvasOf = (w, h) => { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; };
+const iconPad = n => Math.round(n * (+S.kit.iconPad || 0) / 100);
+
+function drawImg(ctx, e, x, y, W, H){
+  const s = coverS(e, W, H) * e.zoom;
+  ctx.save(); ctx.beginPath(); ctx.rect(x, y, W, H); ctx.clip();
+  ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(e.img, x + W / 2 - e.cx * s, y + H / 2 - e.cy * s, imW(e) * s, imH(e) * s);
+  ctx.restore();
+}
+function checker(ctx, W, H, cell){
+  ctx.fillStyle = '#eceff3'; ctx.fillRect(0, 0, W, H); ctx.fillStyle = '#d3d9e0';
+  for (let y = 0; y < H; y += cell) for (let x = 0; x < W; x += cell) if (((x + y) / cell) % 2) ctx.fillRect(x, y, cell, cell);
+}
+function paintIcon(ctx, n, forceBg){
+  ctx.clearRect(0, 0, n, n);
+  if (forceBg || !S.kit.iconTransparent) { ctx.fillStyle = S.kit.iconBg || '#ffffff'; ctx.fillRect(0, 0, n, n); }
+  const p = iconPad(n); drawImg(ctx, KIT.icon, p, p, n - 2 * p, n - 2 * p);
+}
+function iconMaster(forceBg){ const c = canvasOf(1024, 1024); paintIcon(c.getContext('2d'), 1024, forceBg); return c; }
+// Halve repeatedly before the last step so 16px and 32px icons stay crisp instead of aliased.
+function downscale(src, n){
+  let cur = src;
+  while (cur.width / 2 >= n) {
+    const h = canvasOf(Math.round(cur.width / 2), Math.round(cur.height / 2)), x = h.getContext('2d');
+    x.imageSmoothingQuality = 'high'; x.drawImage(cur, 0, 0, h.width, h.height); cur = h;
+  }
+  const out = canvasOf(n, n), x = out.getContext('2d'); x.imageSmoothingQuality = 'high'; x.drawImage(cur, 0, 0, n, n);
+  return out;
+}
+function renderOG(){
+  const c = canvasOf(1200, 630), x = c.getContext('2d');
+  x.fillStyle = S.kit.ogBg || '#ffffff'; x.fillRect(0, 0, 1200, 630);
+  drawImg(x, KIT.og, 0, 0, 1200, 630); return c;
+}
+
+function drawStage(key){
+  const stage = $(`[data-stage="${key}"]`); if (!stage) return;
+  const e = KIT[key], cv = $('canvas', stage);
+  stage.classList.toggle('empty', !e.img);
+  const r = stage.getBoundingClientRect(); if (!r.width) return;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const w = Math.round(r.width * dpr), h = Math.round(r.height * dpr);
+  if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+  const ctx = cv.getContext('2d'); ctx.clearRect(0, 0, w, h);
+  if (!e.img) return;
+  if (key === 'og') { ctx.fillStyle = S.kit.ogBg || '#ffffff'; ctx.fillRect(0, 0, w, h); drawImg(ctx, e, 0, 0, w, h); return; }
+  if (S.kit.iconTransparent) checker(ctx, w, h, Math.round(10 * dpr)); else { ctx.fillStyle = S.kit.iconBg || '#ffffff'; ctx.fillRect(0, 0, w, h); }
+  const p = iconPad(w); drawImg(ctx, e, p, p, w - 2 * p, h - 2 * p);
+  if (p > 0) { ctx.setLineDash([4 * dpr, 4 * dpr]); ctx.strokeStyle = 'rgba(36,83,224,.55)'; ctx.lineWidth = dpr; ctx.strokeRect(p + .5, p + .5, w - 2 * p - 1, h - 2 * p - 1); }
+}
+let pvT;
+function drawIconPreviews(){
+  const e = KIT.icon, m = e.img ? iconMaster(false) : null, mb = e.img ? iconMaster(true) : null;
+  $$('[data-kpv]').forEach(cv => {
+    const n = cv.width, x = cv.getContext('2d'); x.clearRect(0, 0, n, n);
+    if (m) x.drawImage(downscale(cv.dataset.kpv === '180' ? mb : m, n), 0, 0);
+  });
+  const t = $('[data-ktabname]'); if (t) t.textContent = S.site.name || S.site.title || 'Your site';
+  // Feed the Previews tab: the cropped OG image and a 64px favicon, refreshed after each edit settles.
+  const og = KIT.og.img ? renderOG().toDataURL('image/jpeg', 0.82) : null;
+  const icon = m ? downscale(m, 64).toDataURL('image/png') : null;
+  if (og !== kitPv.og || icon !== kitPv.icon) { kitPv.og = og; kitPv.icon = icon; renderPreview(); }
+}
+const kitPv = {og: null, icon: null};
+const schedulePv = () => { clearTimeout(pvT); pvT = setTimeout(drawIconPreviews, 120); };
+function kitFiles(){
+  const f = [];
+  if (KIT.og.img) f.push('og-image.' + S.kit.ogFormat);
+  if (KIT.icon.img) f.push('favicon.ico', 'favicon-16x16.png', 'favicon-32x32.png', 'apple-touch-icon.png', 'android-chrome-192x192.png', 'android-chrome-512x512.png', 'site.webmanifest');
+  return f;
+}
+function kitDraw(){
+  if (!$('#sec-kit')) return;
+  drawStage('og'); drawStage('icon'); schedulePv();
+  $$('[data-kzoom]').forEach(r => { const e = KIT[r.dataset.kzoom]; r.value = e.zoom; r.disabled = !e.img; });
+  $$('[data-kfit],[data-kfill],[data-kclear]').forEach(b => { b.disabled = !KIT[b.dataset.kfit || b.dataset.kfill || b.dataset.kclear].img; });
+  $('[data-kcopy]').disabled = !KIT.og.img;
+  $('[data-kq]').hidden = S.kit.ogFormat !== 'jpg';
+  const files = kitFiles();
+  $('#kitZip').disabled = !files.length;
+  $('#kitFiles').textContent = files.length ? 'In the zip: ' + files.join(' · ') : 'Add an OG image, an icon, or both to build the zip.';
+}
+function setZoom(key, z){
+  const e = KIT[key]; if (!e.img) return;
+  e.zoom = Math.min(4, Math.max(0.2, z));
+  const r = $(`[data-kzoom="${key}"]`); if (r) r.value = e.zoom;
+  drawStage(key); schedulePv();
+}
+function recenter(key, zoom){ const e = KIT[key]; if (!e.img) return; e.cx = imW(e) / 2; e.cy = imH(e) / 2; setZoom(key, zoom); }
+// CSS pixels on the stage per source-image pixel, used to turn a drag into an image-space move.
+function stageScale(key){
+  const e = KIT[key], r = $(`[data-stage="${key}"]`).getBoundingClientRect();
+  let W = r.width, H = r.height;
+  if (key === 'icon') { const p = W * (+S.kit.iconPad || 0) / 100; W -= 2 * p; H -= 2 * p; }
+  return coverS(e, W, H) * e.zoom;
+}
+function loadKit(key, file){
+  if (!file || !/^image\//.test(file.type)) { toast('Choose an image file: PNG, JPG, WebP or SVG.'); return; }
+  const url = URL.createObjectURL(file), img = new Image();
+  img.onload = () => {
+    if (!img.naturalWidth || !img.naturalHeight) { toast('That image has no size. If it is an SVG, give it a width and height or export a PNG.'); return; }
+    const e = KIT[key]; if (e.url) URL.revokeObjectURL(e.url);
+    Object.assign(e, {img, url, name: file.name, cx: img.naturalWidth / 2, cy: img.naturalHeight / 2});
+    e.zoom = key === 'icon' ? fitZoom(e) : 1;
+    kitDraw(); toast(`Loaded ${file.name}`);
+  };
+  img.onerror = () => toast('That file could not be read as an image.');
+  img.src = url;
+}
+function bindStage(key){
+  const stage = $(`[data-stage="${key}"]`), e = KIT[key];
+  let drag = null;
+  stage.addEventListener('pointerdown', ev => {
+    if (!e.img) { $(`[data-kfile="${key}"]`).click(); return; }
+    drag = {x: ev.clientX, y: ev.clientY, cx: e.cx, cy: e.cy, k: stageScale(key)};
+    stage.setPointerCapture(ev.pointerId); stage.classList.add('grabbing');
+  });
+  stage.addEventListener('pointermove', ev => {
+    if (!drag) return;
+    e.cx = drag.cx - (ev.clientX - drag.x) / drag.k; e.cy = drag.cy - (ev.clientY - drag.y) / drag.k;
+    drawStage(key);
+  });
+  const end = () => { if (!drag) return; drag = null; stage.classList.remove('grabbing'); schedulePv(); };
+  stage.addEventListener('pointerup', end); stage.addEventListener('pointercancel', end);
+  stage.addEventListener('wheel', ev => { if (!e.img) return; ev.preventDefault(); setZoom(key, e.zoom * Math.exp(-ev.deltaY * 0.0015)); }, {passive: false});
+  stage.addEventListener('keydown', ev => {
+    if (!e.img) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); $(`[data-kfile="${key}"]`).click(); } return; }
+    const step = (ev.shiftKey ? 40 : 8) / stageScale(key);
+    const moves = {ArrowLeft:[step,0], ArrowRight:[-step,0], ArrowUp:[0,step], ArrowDown:[0,-step]};
+    if (moves[ev.key]) { ev.preventDefault(); e.cx += moves[ev.key][0]; e.cy += moves[ev.key][1]; drawStage(key); schedulePv(); }
+    else if (ev.key === '+' || ev.key === '=') { ev.preventDefault(); setZoom(key, e.zoom * 1.08); }
+    else if (ev.key === '-') { ev.preventDefault(); setZoom(key, e.zoom / 1.08); }
+  });
+  stage.addEventListener('dragover', ev => { ev.preventDefault(); stage.classList.add('dragover'); });
+  stage.addEventListener('dragleave', () => stage.classList.remove('dragover'));
+  stage.addEventListener('drop', ev => { ev.preventDefault(); stage.classList.remove('dragover'); loadKit(key, ev.dataTransfer.files && ev.dataTransfer.files[0]); });
+  if (window.ResizeObserver) new ResizeObserver(() => drawStage(key)).observe(stage);
+}
+
+// favicon.ico holding PNG-encoded 16, 32 and 48px images (supported by every current browser).
+function buildIco(parts){
+  const head = 6 + 16 * parts.length, total = head + parts.reduce((t, p) => t + p.bytes.length, 0);
+  const buf = new ArrayBuffer(total), dv = new DataView(buf);
+  dv.setUint16(0, 0, true); dv.setUint16(2, 1, true); dv.setUint16(4, parts.length, true);
+  let off = head;
+  parts.forEach((p, i) => {
+    const o = 6 + 16 * i, d = p.n >= 256 ? 0 : p.n;
+    dv.setUint8(o, d); dv.setUint8(o + 1, d); dv.setUint8(o + 2, 0); dv.setUint8(o + 3, 0);
+    dv.setUint16(o + 4, 1, true); dv.setUint16(o + 6, 32, true);
+    dv.setUint32(o + 8, p.bytes.length, true); dv.setUint32(o + 12, off, true);
+    new Uint8Array(buf, off, p.bytes.length).set(p.bytes); off += p.bytes.length;
+  });
+  return new Uint8Array(buf);
+}
+const toBlob = (c, type, q) => new Promise((res, rej) => c.toBlob(b => b ? res(b) : rej(new Error('Could not encode image')), type, q));
+function kitFolder(){
+  let f = String(S.kit.folder || '').trim();
+  if (!f || f === './') return '';
+  return f.endsWith('/') ? f : f + '/';
+}
+// Point the form at the files in the zip, so the copied code and the uploaded files match.
+function applyKitPaths(){
+  const f = kitFolder();
+  if (KIT.og.img) {
+    Object.assign(S.og, {on: true, image: f + 'og-image.' + S.kit.ogFormat, width: '1200', height: '630', imageType: ''});
+    localImg = renderOG().toDataURL('image/jpeg', 0.85);
+  }
+  if (KIT.icon.img) Object.assign(S.icons, {on: true, ico: f + 'favicon.ico', apple: f + 'apple-touch-icon.png', fav32: f + 'favicon-32x32.png', fav16: f + 'favicon-16x16.png', manifest: f + 'site.webmanifest'});
+  fillForm(); update();
+}
+async function buildZip(){
+  const zip = new JSZip(), K = S.kit;
+  if (KIT.og.img) {
+    const png = K.ogFormat === 'png';
+    zip.file('og-image.' + (png ? 'png' : 'jpg'), await toBlob(renderOG(), png ? 'image/png' : 'image/jpeg', (+K.quality || 90) / 100));
+  }
+  if (KIT.icon.img) {
+    const m = iconMaster(false), mb = iconMaster(true);
+    const png = (src, n) => toBlob(downscale(src, n), 'image/png');
+    zip.file('favicon-16x16.png', await png(m, 16));
+    zip.file('favicon-32x32.png', await png(m, 32));
+    zip.file('apple-touch-icon.png', await png(mb, 180));
+    zip.file('android-chrome-192x192.png', await png(m, 192));
+    zip.file('android-chrome-512x512.png', await png(m, 512));
+    const parts = [];
+    for (const n of [16, 32, 48]) parts.push({n, bytes: new Uint8Array(await (await png(m, n)).arrayBuffer())});
+    zip.file('favicon.ico', buildIco(parts));
+    const theme = hex6(S.seo.themeColor.trim()) || '#ffffff';
+    zip.file('site.webmanifest', JSON.stringify({
+      name: S.site.name || S.site.title || '', short_name: S.site.name || '',
+      icons: [{src:'android-chrome-192x192.png', sizes:'192x192', type:'image/png'}, {src:'android-chrome-512x512.png', sizes:'512x512', type:'image/png'}],
+      theme_color: theme, background_color: K.iconTransparent ? theme : (K.iconBg || theme), display: 'standalone'
+    }, null, 2) + '\n');
+  }
+  return zip.generateAsync({type: 'blob', compression: 'DEFLATE'});
+}
+// Standard browser download: hand the zip to the browser through a temporary object URL.
+function saveBlob(blob, filename){
+  const url = URL.createObjectURL(blob), a = document.createElement('a');
+  a.href = url; a.download = filename; a.rel = 'noopener'; a.style.display = 'none';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
+}
+const kitMsg = t => { const m = $('#kitMsg'); m.textContent = t || ''; m.hidden = !t; };
+async function downloadZip(){
+  kitMsg('');
+  if (!window.JSZip) { kitMsg('The zip library did not load. Check your connection and reload the page.'); return; }
+  if (!kitFiles().length) return;
+  const btn = $('#kitZip'), label = btn.innerHTML;
+  btn.disabled = true; btn.textContent = 'Building zip…';
+  try {
+    applyKitPaths();
+    const blob = await buildZip();
+    const slug = (S.site.name || 'site').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'site';
+    saveBlob(blob, slug + '-meta-kit.zip');
+    toast('Zip downloaded. Form paths now point to ' + (kitFolder() || 'the site root'));
+  } catch (err) {
+    kitMsg('The zip could not be built' + (err && err.message ? ': ' + err.message : '.'));
+  } finally { btn.disabled = false; btn.innerHTML = label; }
+}
+function bindKit(){
+  bindStage('og'); bindStage('icon');
+  const sec = $('#sec-kit');
+  sec.addEventListener('change', ev => {
+    const t = ev.target;
+    if (t.name === 'kitTab') { $$('[data-kpane]').forEach(p => { p.hidden = p.dataset.kpane !== t.value; }); requestAnimationFrame(kitDraw); }
+    if (t.dataset.kfile) { loadKit(t.dataset.kfile, t.files && t.files[0]); t.value = ''; }
+  });
+  sec.addEventListener('input', ev => { const z = ev.target.dataset.kzoom; if (z) setZoom(z, +ev.target.value); });
+  sec.addEventListener('click', ev => {
+    const b = ev.target.closest('button'); if (!b) return;
+    if (b.dataset.kfit) recenter(b.dataset.kfit, fitZoom(KIT[b.dataset.kfit]));
+    if (b.dataset.kfill) recenter(b.dataset.kfill, 1);
+    if (b.dataset.kclear) {
+      const key = b.dataset.kclear, e = KIT[key];
+      // The icon editor can share the OG image object; only revoke a URL nothing else uses.
+      const other = KIT[key === 'og' ? 'icon' : 'og'];
+      if (e.url && other.img !== e.img) URL.revokeObjectURL(e.url);
+      if (key === 'og' && other.img === e.img) other.url = e.url;
+      Object.assign(e, {img: null, url: '', name: '', zoom: 1, cx: 0, cy: 0});
+      if (key === 'og') localImg = null;
+      kitDraw(); if (key === 'og') renderPreview();
+      toast(key === 'og' ? 'OG image removed' : 'Icon image removed');
+    }
+    if (b.hasAttribute('data-kcopy') && KIT.og.img) {
+      const o = KIT.og, e = KIT.icon;
+      Object.assign(e, {img: o.img, url: '', name: o.name, cx: imW(o) / 2, cy: imH(o) / 2}); e.zoom = fitZoom(e); kitDraw();
+    }
+    if (b.id === 'kitZip') downloadZip();
+  });
+}
+
+/* ================= events ================= */
+// Kit file names; the Asset folder rewrites these paths as you type.
+const KIT_ICON_FILES = {ico:'favicon.ico', apple:'apple-touch-icon.png', fav32:'favicon-32x32.png', fav16:'favicon-16x16.png', manifest:'site.webmanifest'};
+function syncFolder(){
+  const f = kitFolder();
+  const set = (k, v) => { setP(k, v); const el = $(`[data-k="${k}"]`); if (el && el.value !== v) el.value = v; };
+  const file = p => String(p || '').split(/[?#]/)[0].split('/').pop();
+  const local = p => !/^[a-z][a-z0-9+.-]*:/i.test(p) || (siteBase() && p.startsWith(new URL(siteBase()).origin + '/'));
+  for (const [k, name] of Object.entries(KIT_ICON_FILES)) set('icons.' + k, f + name);
+  if (S.icons.svg && local(S.icons.svg)) set('icons.svg', f + file(S.icons.svg));
+  if (KIT.og.img) set('og.image', f + 'og-image.' + S.kit.ogFormat);
+  else if (S.og.image && local(S.og.image)) set('og.image', f + file(S.og.image));
+}
+function onField(e){
+  const el = e.target;
+  if (el.dataset.swatch) { setP(el.dataset.swatch, el.value); const t = $(`[data-k="${el.dataset.swatch}"]`); if (t) t.value = el.value; update(); return; }
+  const k = el.dataset.k; if (!k) return;
+  setP(k, el.type === 'checkbox' ? el.checked : el.value);
+  if (k === 'seo.themeColor') { const sw = $(`[data-swatch="${k}"]`); const h = hex6(el.value.trim()); if (sw && h) sw.value = h; }
+  if (k === 'og.image') localImg = null;
+  if (k === 'kit.folder') syncFolder();
+  if (k === 'kit.ogFormat' && KIT.og.img) syncFolder();
+  update();
+}
+document.addEventListener('DOMContentLoaded', () => {});
+boot();
+
+$('#form').addEventListener('input', onField);
+$('#form').addEventListener('change', e => { if (e.target.tagName === 'SELECT') onField(e); });
+$('#form').addEventListener('click', e => {
+  const j = e.target.closest('[data-jump]'); if (j) $('#sec-' + j.dataset.jump).scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'start'});
+});
+$('#form').addEventListener('change', e => {
+  if (e.target.id !== 'ogFile') return;
+  const file = e.target.files && e.target.files[0]; if (!file) return;
+  const r = new FileReader();
+  r.onload = () => {
+    const img = new Image();
+    img.onload = () => {
+      localImg = r.result; S.og.width = String(img.naturalWidth); S.og.height = String(img.naturalHeight);
+      const extType = mimeOf(S.og.image);
+      S.og.imageType = (file.type && file.type !== extType) ? file.type : '';
+      if (!S.og.image) S.og.image = '/' + file.name;
+      fillForm(); update(); toast(`Read ${img.naturalWidth} × ${img.naturalHeight} from ${file.name}`);
+    };
+    img.onerror = () => toast('That file could not be read as an image.');
+    img.src = r.result;
+  };
+  r.readAsDataURL(file); e.target.value = '';
+});
+
+$('#toolbar').addEventListener('change', e => {
+  const k = e.target.dataset.out; if (!k) return;
+  S.out[k] = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+  update();
+});
+$('#bCopy').addEventListener('click', () => {
+  if (!codeText) { toast('Nothing to copy yet.'); return; }
+  copy(codeText, `Copied ${codeText.split('\n').length} lines`);
+});
+
+$$('.tab').forEach(t => t.addEventListener('click', () => {
+  $$('.tab').forEach(x => x.setAttribute('aria-selected', String(x === t)));
+  $$('.pane').forEach(p => { p.hidden = p.id !== 'pane-' + t.dataset.tab; });
+}));
+$('#checks').addEventListener('click', e => {
+  const g = e.target.closest('[data-go]'); if (!g) return;
+  const k = g.dataset.go;
+  const sec = SECTIONS.find(s => s.fields.some(f => f.k === k));
+  if (sec && sec.toggle && !getP(sec.toggle)) { setP(sec.toggle, true); fillForm(); update(); }
+  const el = $(`[data-k="${k}"]`); if (!el) return;
+  el.scrollIntoView({block:'center'}); el.focus({preventScroll:true});
+});
+
+$('#bImport').addEventListener('click', openModal);
+$('#impCancel').addEventListener('click', closeModal);
+$('#impModal').addEventListener('click', e => { if (e.target.id === 'impModal') closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#impModal').hidden) closeModal(); });
+$('#impGo').addEventListener('click', () => {
+  const r = readImport(); if (!r) return;
+  S = r.state; localImg = null; fillForm(); update(); closeModal(); $('#impText').value = ''; toast('Imported');
+});
+
+const top = $('.top');
+const setHdr = () => document.documentElement.style.setProperty('--hdr', top.offsetHeight + 'px');
+setHdr(); if (window.ResizeObserver) new ResizeObserver(setHdr).observe(top);
+})();
+</script>
+</body>
+</html>
