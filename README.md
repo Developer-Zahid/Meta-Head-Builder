@@ -26,8 +26,6 @@ It runs entirely in your browser. There is no build step, no backend and no sign
 - [How to use](#how-to-use)
 - [Generated output reference](#generated-output-reference)
 - [Keyboard and mouse controls](#keyboard-and-mouse-controls)
-- [Tech stack](#tech-stack)
-- [Run locally or self-host](#run-locally-or-self-host)
 - [Browser support](#browser-support)
 - [Privacy](#privacy)
 - [Author](#author)
@@ -270,39 +268,6 @@ The real output includes every tag you've filled in, and each JSON-LD entity car
 
 - **Esc** closes the Import dialog.
 - The chips at the top of the form (`base`, `meta`, `og:*`, `twitter:*`, `JSON-LD`, `link rel`, `images`) jump to each section.
-
----
-
-## Tech stack
-
-- **HTML, CSS and vanilla JavaScript** in a single `index.html` file, with no framework and no build step.
-- **[JSZip](https://stuk.github.io/jszip/) 3.10.1** from cdnjs, for building the zip.
-- **Google Fonts:** Bricolage Grotesque (display), Geist (UI) and Geist Mono (code).
-- **Canvas API** for cropping, resizing and encoding images. The `.ico` file is written byte by byte in the browser.
-- Light and dark themes follow your system setting.
-
----
-
-## Run locally or self-host
-
-There is nothing to install. Open `index.html` in a browser, or serve the folder:
-
-```bash
-# any static server works
-npx serve .
-# or
-python3 -m http.server 8080
-```
-
-**GitHub Pages**
-
-1. Push `index.html` to a repository.
-2. Go to **Settings → Pages** and set the source to your branch's root.
-3. The tool is live at `https://<user>.github.io/<repo>/`.
-
-It works the same way on Netlify, Vercel, Cloudflare Pages or any static host.
-
-**Offline use:** to drop the CDN dependency, download `jszip.min.js` into the repo and change its `<script src>` to the local path. The fonts fall back to system fonts if Google Fonts can't load.
 
 ---
 
